@@ -8,6 +8,6 @@ set (SRC includeT.cpp test.cpp main.cpp)
 include_directories (../include)
 add_library(includeT SHARED ${SRC})
 
-add_executable (main ${SRC})
+add_executable (exc ${SRC})
 
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/exc.dir/includeT.cpp.o CMakeFiles/exc.dir/test.cpp.o CMakeFiles/exc.dir/main.cpp.o  -o ../../bin/exc 
