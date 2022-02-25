@@ -1,6 +1,0 @@
-/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/CMakeFiles/rebuild_cache.dir
-/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/CMakeFiles/edit_cache.dir
-/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/CMakeFiles/rebuild_cache.dir
-/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/CMakeFiles/edit_cache.dir
-/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/CMakeFiles/main.dir
-/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/CMakeFiles/includeT.dir

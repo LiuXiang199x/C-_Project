@@ -1,4 +1,4 @@
-set (SRC includeT.cpp)
+set (SRC includeT.cpp test.cpp main.cpp)
 
 # 这里又出现一个新的命令set，是用于定义变量的，EXECUTABLE_OUT_PATH和PROJECT_SOURCE_DIR是CMake自带的预定义变量，其意义如下，
 # EXECUTABLE_OUTPUT_PATH ：目标二进制可执行文件的存放位置
