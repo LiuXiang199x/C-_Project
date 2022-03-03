@@ -11,7 +11,11 @@ torch.manual_seed(1)    # reproducible
 fake_img = torch.rand(1, 3, 224, 224)
 
 
-net = resnet_net.resnet18(num_classes=6)
+net = resnet_net.resnet18(num_classes=5)
+checkpoint = torch.load("/home/agent/C-_Project/SceneRecognition/转换和部署/models/pth_model/resnet18_latest_combined_v9.pth.tar", map_location=lambda storage, loc: storage)
+#print(checkpoint)
+model_state_dict = {str.replace(k,'module.',''): v for k,v in checkpoint['model_state_dict'].items()}
+net.load_state_dict(model_state_dict)
 net.eval()
 
 print("Shape of prediction pth model：", net(fake_img).shape)
@@ -35,7 +39,7 @@ def test():
 
     # # Export the model
     torch.onnx.export(model, fake_img,
-                      "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18.onnx", 
+                      "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18_18pth.onnx", 
                       opset_version=10)
                       #keep_initializers_as_inputs=True, 
                       # verbose=True
@@ -55,11 +59,17 @@ def test():
     print("=============Successful==========")
     
 def check_pth_onnx():
+    
+    print("============= Checking pth model ============")
+    pred = net(fake_img)
+    print("pth model output pred[:9]:\n", pred[0][:9])  # shape (1,512)
+    
+    print("============= Checking onnx model ============")
     # print("torch.__version__:", torch.__version__) # torch.__version__: 1.7.1
     # print("onnx.__version__:", onnx.__version__) # onnx.__version__: 1.11.0
     # print("onnxruntime.__version__:", onnxruntime.__version__) # onnxruntime.__version__: 1.10.0
     
-    onnx_path = "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18.onnx"
+    onnx_path = "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18_18pth.onnx"
     # onnx_model = onnx.load(onnx_path)
     # print(onnx.checker.check_model(onnx_model))
 
@@ -70,8 +80,8 @@ def check_pth_onnx():
 
     # compare ONNX Runtime and PyTorch results
 
-    # print("onnx model output:", ort_outs)
-    print("============= pth 2 onnx done ============")
+    print("onnx model output ort_outs[0][0][:9]:\n", ort_outs[0][0][:9])  # shape (1,1,512)
+    # print('tor_out: ', torch_out.detach().numpy().shape)
 
 # test()
-# check_pth_onnx()
+check_pth_onnx()
