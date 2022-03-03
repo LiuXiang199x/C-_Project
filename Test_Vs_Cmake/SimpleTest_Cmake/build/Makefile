@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named exc
+# Target rules for targets named test_eigen
 
 # Build rule for target.
-exc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exc
-.PHONY : exc
+test_eigen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_eigen
+.PHONY : test_eigen
 
 # fast build rule for target.
-exc/fast:
-	$(MAKE) -f src/CMakeFiles/exc.dir/build.make src/CMakeFiles/exc.dir/build
-.PHONY : exc/fast
+test_eigen/fast:
+	$(MAKE) -f src/CMakeFiles/test_eigen.dir/build.make src/CMakeFiles/test_eigen.dir/build
+.PHONY : test_eigen/fast
 
 #=============================================================================
 # Target rules for targets named includeT
@@ -144,7 +144,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... exc"
+	@echo "... test_eigen"
 	@echo "... includeT"
 .PHONY : help
 
