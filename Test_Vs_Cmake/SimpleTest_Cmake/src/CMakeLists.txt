@@ -1,4 +1,4 @@
-set (SRC includeT.cpp test.cpp main.cpp)
+set (SRC main.cpp)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -O3 -mtune=native ")
 
 
@@ -8,7 +8,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -O3 -mtune=native ")
 # 所以，这里set的意思是把存放elf文件的位置设置为工程根目录下的bin目录。（cmake有很多预定义变量，详细的可以网上搜索一下）
 
 include_directories (../include)
-add_library(includeT SHARED ${SRC})
+# add_library(includeT test SHARED ${SRC})
 
 add_executable (test_eigen ${SRC})
 

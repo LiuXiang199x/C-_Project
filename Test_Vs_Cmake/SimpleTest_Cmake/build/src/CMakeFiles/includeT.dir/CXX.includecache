@@ -6,9 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp
+../include/includeT.h
+test.h
+../include/test.h
+iostream
+-
+
+../include/test.h
 iostream
 -
 Eigen/Dense
 -
+
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/includeT.cpp
+includeT.h
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/includeT.h
+test.h
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/test.h
+Eigen/Dense
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/Eigen/Dense
+
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp
+iostream
+-
+test.h
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/test.h
+
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/test.cpp
+test.h
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/test.h
 

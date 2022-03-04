@@ -1,17 +1,18 @@
-#include "test.h"
+// matrix_cal1.cpp
+#include <iostream>
 #include "Eigen/Dense"
+#include <vector>
+// #include "test.h"
 
 using namespace std;
 using namespace Eigen;
 
 
-
-// Nanodata<13>, Scenedata<512>
-void test(MatrixXd Nanodata, MatrixXd Scenedata, MatrixXd &result){
-    MatrixXd class_fc_bias(5);
-    MatrixXd obj_fc_bias(512);
-    MatrixXd class_fc_weight(5, 1024);
-    MatrixXd obj_fc_weight(512, 13);
+void test(double *Nanodet_res, double *Scene_res){
+    Matrix<double, 5, 1> class_fc_bias;
+    Matrix<double, 512, 1> obj_fc_bias;
+    Matrix<double, 5, 1024> class_fc_weight;
+    Matrix<double, 512, 13> obj_fc_weight;
       
     class_fc_bias << 0.08760122954845428,
                     -0.588618814945221,
@@ -1051,60 +1052,43 @@ void test(MatrixXd Nanodata, MatrixXd Scenedata, MatrixXd &result){
                 0.028224232,0.054425,0.016396116,-0.016182693,0.1510133,-0.040464602,-0.034878377,-0.22552688,-0.11414889,0.14203091,-0.1870134,0.038712848,-0.047911726,
                 0.047990575,0.049700733,0.027605042,0.08256456,0.15715511,-0.027101615,-0.02985972,-0.1561127,-0.061808,-0.17236745,-0.09138046,0.0514379,-0.046921022;
 
+	cout << class_fc_bias << endl;
+    Matrix<double, 512, 1> resultNano;
+    Matrix<double, 1024, 1> resultConcat;
+    Matrix<double, 13, 1> Nanodata;
 
-    MatrixXd resultNano(512);
-    MatrixXd resultConcat(1024);
-    
-    //resultNano = Nanodata * obj_fc_weight + obj_fc_bias;  // 512 features
+	Nanodata << 1,2,3,4,5,6,7,8,9,1,1,3,4;
+    resultNano = obj_fc_weight * Nanodata + obj_fc_bias;  // 512 features
+
+	cout << "resultNano rows: " << resultNano.rows() << " resultNano cols: " << resultNano.cols() << endl;
+	cout << "resultNano = " << resultNano << endl;
+
     // resultConcat = memcpy
+}
+
+
+void testt(){
+	Matrix<double, 3, 1> a;
+	Matrix<double, 2, 3> b;
+
+	a << 1, 2, 3;
+	b << 2,3,4,5,6,7;
+
+	Matrix<double, Dynamic, Dynamic> c;
+	cout << a << endl;
+	cout << b << endl;
+	c = b*a;
+	cout << "result c:\n" << c << endl;
+	cout << a.rows() << " " << a.cols() << endl;
 
 }
 
 
-
-
-void show(){
-    printf("me gusta CCCC\n");
-}
-
-
-void vplusv(){
-  Matrix2d a;
-  a << 1, 2,
-       3, 4;
-
-  MatrixXd b(1,4);
-  b << 5, 6,
-       7, 8;
-
-  std::cout << "a + b =\n" << a + b << std::endl;
-  std::cout << "a - b =\n" << a - b << std::endl;
-  std::cout << "Doing a += b;" << std::endl;
-  a += b;
-  std::cout << "Now a =\n" << a << std::endl;
-
-  std::cout << std::endl;
-  Vector3d v(1,2,3);
-  Vector3d w(1,0,0);
-  std::cout << "-v + w - v =\n" << -v + w - v << std::endl;
-}
-
-void MM_MV(){
-  MatrixXd mat(2,2);
-  mat << 1, 2,
-         3, 4;
-
-  Vector2d u(-1,1), v(2,0);
-  
-  std::cout << "mat: \n" << mat << std::endl; 
-  std::cout << "Here is mat*mat:\n" << mat*mat << std::endl;
-  std::cout << "Here is mat*u:\n" << mat*u << std::endl;
-  std::cout << "Here is u^T*mat:\n" << u.transpose()*mat << std::endl;
-  std::cout << "Here is u^T*v:\n" << u.transpose()*v << std::endl;
-  std::cout << "Here is u*v^T:\n" << u*v.transpose() << std::endl;
-  std::cout << "Let's multiply mat by itself" << std::endl;
-
-  mat = mat*mat;
-
-  std::cout << "Now mat is mat:\n" << mat << std::endl;
-}
+int main()
+{
+	printf("hello world\n");
+	double a[2] = {1,2};
+	double b[3] = {1,2,3};
+	test(a, b);
+	return 0;
+} 

@@ -5,6 +5,7 @@ src/CMakeFiles/includeT.dir/includeT.cpp.o: ../include/includeT.h
 src/CMakeFiles/includeT.dir/includeT.cpp.o: ../include/test.h
 src/CMakeFiles/includeT.dir/includeT.cpp.o: ../src/includeT.cpp
 
+src/CMakeFiles/includeT.dir/main.cpp.o: ../include/test.h
 src/CMakeFiles/includeT.dir/main.cpp.o: ../src/main.cpp
 
 src/CMakeFiles/includeT.dir/test.cpp.o: ../include/test.h

@@ -123,19 +123,6 @@ test_eigen/fast:
 	$(MAKE) -f src/CMakeFiles/test_eigen.dir/build.make src/CMakeFiles/test_eigen.dir/build
 .PHONY : test_eigen/fast
 
-#=============================================================================
-# Target rules for targets named includeT
-
-# Build rule for target.
-includeT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 includeT
-.PHONY : includeT
-
-# fast build rule for target.
-includeT/fast:
-	$(MAKE) -f src/CMakeFiles/includeT.dir/build.make src/CMakeFiles/includeT.dir/build
-.PHONY : includeT/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -145,7 +132,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test_eigen"
-	@echo "... includeT"
 .PHONY : help
 
 
