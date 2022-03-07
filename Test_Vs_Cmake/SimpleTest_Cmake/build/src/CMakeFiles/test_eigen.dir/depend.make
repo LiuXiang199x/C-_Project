@@ -140,6 +140,8 @@ src/CMakeFiles/test_eigen.dir/main.cpp.o: /home/agent/anaconda3/envs/dlpy364/inc
 src/CMakeFiles/test_eigen.dir/main.cpp.o: /home/agent/anaconda3/envs/dlpy364/include/opencv2/videostab/wobble_suppression.hpp
 src/CMakeFiles/test_eigen.dir/main.cpp.o: /home/agent/anaconda3/envs/dlpy364/include/opencv2/xfeatures2d/cuda.hpp
 
+src/CMakeFiles/test_eigen.dir/rknn.cpp.o: ../src/rknn.cpp
+
 src/CMakeFiles/test_eigen.dir/test.cpp.o: ../include/test.h
 src/CMakeFiles/test_eigen.dir/test.cpp.o: ../src/test.cpp
 

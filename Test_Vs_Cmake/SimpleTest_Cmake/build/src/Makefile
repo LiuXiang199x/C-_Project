@@ -179,6 +179,33 @@ main.cpp.s:
 	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build && $(MAKE) -f src/CMakeFiles/test_eigen.dir/build.make src/CMakeFiles/test_eigen.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rknn.o: rknn.cpp.o
+
+.PHONY : rknn.o
+
+# target to build an object file
+rknn.cpp.o:
+	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build && $(MAKE) -f src/CMakeFiles/test_eigen.dir/build.make src/CMakeFiles/test_eigen.dir/rknn.cpp.o
+.PHONY : rknn.cpp.o
+
+rknn.i: rknn.cpp.i
+
+.PHONY : rknn.i
+
+# target to preprocess a source file
+rknn.cpp.i:
+	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build && $(MAKE) -f src/CMakeFiles/test_eigen.dir/build.make src/CMakeFiles/test_eigen.dir/rknn.cpp.i
+.PHONY : rknn.cpp.i
+
+rknn.s: rknn.cpp.s
+
+.PHONY : rknn.s
+
+# target to generate assembly for a file
+rknn.cpp.s:
+	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build && $(MAKE) -f src/CMakeFiles/test_eigen.dir/build.make src/CMakeFiles/test_eigen.dir/rknn.cpp.s
+.PHONY : rknn.cpp.s
+
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -248,6 +275,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rknn.o"
+	@echo "... rknn.i"
+	@echo "... rknn.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
