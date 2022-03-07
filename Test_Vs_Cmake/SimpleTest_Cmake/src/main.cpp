@@ -3,10 +3,13 @@
 #include "Eigen/Dense"
 #include <vector>
 #include <math.h>
-// #include "test.h"
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 
 using namespace std;
 using namespace Eigen;
+using namespace cv;
 
 
 void test(double *Nanodet_res, double *Scene_res){
@@ -1077,44 +1080,29 @@ void test(double *Nanodet_res, double *Scene_res){
     // resultConcat = memcpy
     result_predict = class_fc_weight * resultConcat + class_fc_bias;
     cout << result_predict.size() << endl;
-    cout << result_predict << endl;
+    // cout << result_predict << endl;
     
     double total_prob = 0;
     double model_output[5];
 
     for(int i=0; i<result_predict.size(); i++){
-        cout << result_predict(i) << endl;
+        // cout << result_predict(i) << endl;
         total_prob = total_prob + exp(result_predict(i));
     }
 
-    cout << "total_prob: " << total_prob << endl;
-    double j=0;
+    // cout << "total_prob: " << total_prob << endl;
+
     for(int i=0; i<result_predict.size(); i++){
         model_output[i] = exp(result_predict(i)) / total_prob;
         cout << model_output[i] << ", ";
-        j = j + exp(result_predict(i));
     }
     cout << endl;
-    cout << j << endl;
+
 }
 
-
-// void testt(){
-// 	Matrix<double, 3, 1> a;
-// 	Matrix<double, 2, 3> b;
-
-// 	a << 1, 2, 3;
-// 	b << 2,3,4,5,6,7;
-
-// 	Matrix<double, Dynamic, Dynamic> c;
-// 	cout << a << endl;
-// 	cout << b << endl;
-// 	c = b*a;
-// 	cout << "result c:\n" << c << endl;
-// 	cout << a.rows() << " " << a.cols() << endl;
+// void test_cv(){
 
 // }
-
 
 int main()
 {
@@ -1123,7 +1111,7 @@ int main()
 	double tmp_Scene[512] = {1};
 
 
-	test(tmp_Nano, tmp_Scene);
+	// test(tmp_Nano, tmp_Scene);
 
 
 	return 0;
