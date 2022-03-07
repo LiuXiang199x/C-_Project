@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../librknn_api/include/rknn_api.h
+stdint.h
+-
+
+/home/agent/C-_Project/ONNX_RKNN/scene/src/main.cpp
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+fstream
+-
+iostream
+-
+sys/time.h
+-
+vector
+-
+string.h
+-
+uchar.h
+-
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+opencv2/opencv.hpp
+-
+rknn_api.h
+/home/agent/C-_Project/ONNX_RKNN/scene/src/rknn_api.h
+

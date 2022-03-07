@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/rknn_class_infer.dir/src/main.cpp.o  -o ../bin/rknn_class_infer  -Wl,-rpath,/home/agent/C-_Project/ONNX_RKNN/scene/librknn_api/lib64 ../librknn_api/lib64/librknn_api.so -lpthread -ldl 

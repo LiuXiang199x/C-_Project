@@ -1,0 +1,3 @@
+/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/rebuild_cache.dir
+/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/edit_cache.dir
+/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/rknn_class_infer.dir
