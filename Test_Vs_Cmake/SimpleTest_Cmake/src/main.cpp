@@ -1083,15 +1083,19 @@ void test(double *Nanodet_res, double *Scene_res){
     double model_output[5];
 
     for(int i=0; i<result_predict.size(); i++){
+        cout << result_predict(i) << endl;
         total_prob = total_prob + exp(result_predict(i));
     }
 
     cout << "total_prob: " << total_prob << endl;
+    double j=0;
     for(int i=0; i<result_predict.size(); i++){
-        model_output[i] = result_predict(i) / total_prob;
+        model_output[i] = exp(result_predict(i)) / total_prob;
         cout << model_output[i] << ", ";
+        j = j + exp(result_predict(i));
     }
     cout << endl;
+    cout << j << endl;
 }
 
 
