@@ -57,22 +57,9 @@ include src/CMakeFiles/test_eigen.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/test_eigen.dir/flags.make
 
-src/CMakeFiles/test_eigen.dir/main.cpp.o: src/CMakeFiles/test_eigen.dir/flags.make
-src/CMakeFiles/test_eigen.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/test_eigen.dir/main.cpp.o"
-	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_eigen.dir/main.cpp.o -c /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp
-
-src/CMakeFiles/test_eigen.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_eigen.dir/main.cpp.i"
-	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp > CMakeFiles/test_eigen.dir/main.cpp.i
-
-src/CMakeFiles/test_eigen.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_eigen.dir/main.cpp.s"
-	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp -o CMakeFiles/test_eigen.dir/main.cpp.s
-
 src/CMakeFiles/test_eigen.dir/includeT.cpp.o: src/CMakeFiles/test_eigen.dir/flags.make
 src/CMakeFiles/test_eigen.dir/includeT.cpp.o: ../src/includeT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/test_eigen.dir/includeT.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/test_eigen.dir/includeT.cpp.o"
 	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_eigen.dir/includeT.cpp.o -c /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/includeT.cpp
 
 src/CMakeFiles/test_eigen.dir/includeT.cpp.i: cmake_force
@@ -82,6 +69,19 @@ src/CMakeFiles/test_eigen.dir/includeT.cpp.i: cmake_force
 src/CMakeFiles/test_eigen.dir/includeT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_eigen.dir/includeT.cpp.s"
 	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/includeT.cpp -o CMakeFiles/test_eigen.dir/includeT.cpp.s
+
+src/CMakeFiles/test_eigen.dir/main.cpp.o: src/CMakeFiles/test_eigen.dir/flags.make
+src/CMakeFiles/test_eigen.dir/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/test_eigen.dir/main.cpp.o"
+	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_eigen.dir/main.cpp.o -c /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp
+
+src/CMakeFiles/test_eigen.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_eigen.dir/main.cpp.i"
+	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp > CMakeFiles/test_eigen.dir/main.cpp.i
+
+src/CMakeFiles/test_eigen.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_eigen.dir/main.cpp.s"
+	cd /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp -o CMakeFiles/test_eigen.dir/main.cpp.s
 
 src/CMakeFiles/test_eigen.dir/test.cpp.o: src/CMakeFiles/test_eigen.dir/flags.make
 src/CMakeFiles/test_eigen.dir/test.cpp.o: ../src/test.cpp
@@ -111,16 +111,16 @@ src/CMakeFiles/test_eigen.dir/test_eigen.cpp.s: cmake_force
 
 # Object files for target test_eigen
 test_eigen_OBJECTS = \
-"CMakeFiles/test_eigen.dir/main.cpp.o" \
 "CMakeFiles/test_eigen.dir/includeT.cpp.o" \
+"CMakeFiles/test_eigen.dir/main.cpp.o" \
 "CMakeFiles/test_eigen.dir/test.cpp.o" \
 "CMakeFiles/test_eigen.dir/test_eigen.cpp.o"
 
 # External object files for target test_eigen
 test_eigen_EXTERNAL_OBJECTS =
 
-../bin/test_eigen: src/CMakeFiles/test_eigen.dir/main.cpp.o
 ../bin/test_eigen: src/CMakeFiles/test_eigen.dir/includeT.cpp.o
+../bin/test_eigen: src/CMakeFiles/test_eigen.dir/main.cpp.o
 ../bin/test_eigen: src/CMakeFiles/test_eigen.dir/test.cpp.o
 ../bin/test_eigen: src/CMakeFiles/test_eigen.dir/test_eigen.cpp.o
 ../bin/test_eigen: src/CMakeFiles/test_eigen.dir/build.make

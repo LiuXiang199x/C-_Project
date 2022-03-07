@@ -15,6 +15,7 @@ src/CMakeFiles/test_eigen.dir/main.cpp.o
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/core/base.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/core/bufferpool.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/core/check.hpp
+ /home/agent/anaconda3/envs/dlpy364/include/opencv2/core/core.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/core/core_c.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/core/cuda.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/core/cuda.inl.hpp
@@ -81,10 +82,12 @@ src/CMakeFiles/test_eigen.dir/main.cpp.o
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/flann/saving.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/flann/timer.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/highgui.hpp
+ /home/agent/anaconda3/envs/dlpy364/include/opencv2/highgui/highgui.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/highgui/highgui_c.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/imgcodecs.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/imgcodecs/imgcodecs_c.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/imgproc.hpp
+ /home/agent/anaconda3/envs/dlpy364/include/opencv2/imgproc/imgproc.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/imgproc/imgproc_c.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/imgproc/types_c.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/ml.hpp
