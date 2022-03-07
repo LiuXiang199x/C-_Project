@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Eigen/Dense"
 #include <vector>
+#include <math.h>
 // #include "test.h"
 
 using namespace std;
@@ -1077,6 +1078,20 @@ void test(double *Nanodet_res, double *Scene_res){
     result_predict = class_fc_weight * resultConcat + class_fc_bias;
     cout << result_predict.size() << endl;
     cout << result_predict << endl;
+    
+    double total_prob = 0;
+    double model_output[5];
+
+    for(int i=0; i<result_predict.size(); i++){
+        total_prob = total_prob + exp(result_predict(i));
+    }
+
+    cout << "total_prob: " << total_prob << endl;
+    for(int i=0; i<result_predict.size(); i++){
+        model_output[i] = result_predict(i) / total_prob;
+        cout << model_output[i] << ", ";
+    }
+    cout << endl;
 }
 
 
