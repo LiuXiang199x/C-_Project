@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/agent/C-_Project/Test_Vs_Cmake/struct_test/src/SceneNet.cpp" "/home/agent/C-_Project/Test_Vs_Cmake/struct_test/build/src/CMakeFiles/test.dir/SceneNet.o"
   "/home/agent/C-_Project/Test_Vs_Cmake/struct_test/src/main.cpp" "/home/agent/C-_Project/Test_Vs_Cmake/struct_test/build/src/CMakeFiles/test.dir/main.o"
+  "/home/agent/C-_Project/Test_Vs_Cmake/struct_test/src/testClass.cpp" "/home/agent/C-_Project/Test_Vs_Cmake/struct_test/build/src/CMakeFiles/test.dir/testClass.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

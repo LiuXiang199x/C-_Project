@@ -1,4 +1,5 @@
 #include "SceneNet.h"
+#include "testClass.h"
 
 /*
     one_hot_selected_objects[0] = one_hot_all_objects[0]
@@ -15,16 +16,26 @@
     one_hot_selected_objects[11] = one_hot_all_objects[21]
     one_hot_selected_objects[12] = one_hot_all_objects[23]
 
-    ['bed_room', 'dining_room', 'drawing_room', 'others', 'toilet_room']
+    ['bed_room', 'dining_room', 'drawing_room', 'others', 'toilet']
 */
+
+using namespace std;
 
 int main()
 {
-	printf("hello world\n");
-	double tmp_Nano[13] = {1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0};
-	double tmp_Scene[512] = {1};
+	// printf("hello world\n");
+	// double tmp_Nano[13] = {1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0};
+	// double tmp_Scene[512] = {1};
 
-    everest::ai::SceneNet a;
-    a.sceneClass(tmp_Nano, tmp_Scene);
+    // everest::ai::SceneNet a;
+    // a.sceneClass(tmp_Nano, tmp_Scene);
+
+    A a;
+    for(int i=0; i<3; i++){
+        cout << a.a << endl;
+    }
+
+    a.gg();
+
 	return 0;
 } 

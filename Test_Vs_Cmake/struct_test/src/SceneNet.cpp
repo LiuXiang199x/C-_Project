@@ -52,13 +52,13 @@ int SceneNet::init_rknn()
 
     // Load RKNN Model
     printf("Loading model ...\n");
-    m_model = load_model(model_path, &model_len);
-    ret = rknn_init(&m_ctx, m_model, model_len, 0);
-    if(ret < 0) {
-        printf("rknn_init fail! ret=%d\n", ret);
-        return -1;
-    }
-
+    // m_model = load_model(model_path, &model_len);
+    // ret = rknn_init(&m_ctx, m_model, model_len, 0);
+    // if(ret < 0) {
+    //     printf("rknn_init fail! ret=%d\n", ret);
+    //     return -1;
+    // }
+    return 0;
 }
 
 void SceneNet::load_params(){

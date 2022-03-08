@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "../../bin/test.pdb"
   "CMakeFiles/test.dir/SceneNet.o"
   "CMakeFiles/test.dir/main.o"
+  "CMakeFiles/test.dir/testClass.o"
 )
 
 # Per-language clean rules from dependency scanning.
