@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/agent/C-_Project/Test_Vs_Cmake/struct_test/src/../include -isystem /usr/include/opencv4 
+CXX_INCLUDES = -I/home/agent/C-_Project/Test_Vs_Cmake/struct_test/src/../include -I/home/agent/C-_Project/Test_Vs_Cmake/struct_test/src/../librknn_api/include -isystem /usr/include/opencv4 
 

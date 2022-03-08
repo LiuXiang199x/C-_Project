@@ -126,6 +126,21 @@ test/fast:
 .PHONY : test/fast
 
 # target to build an object file
+SceneNet.o:
+	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/SceneNet.o
+.PHONY : SceneNet.o
+
+# target to preprocess a source file
+SceneNet.i:
+	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/SceneNet.i
+.PHONY : SceneNet.i
+
+# target to generate assembly for a file
+SceneNet.s:
+	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/SceneNet.s
+.PHONY : SceneNet.s
+
+# target to build an object file
 main.o:
 	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/main.o
 .PHONY : main.o
@@ -149,6 +164,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... SceneNet.o"
+	@echo "... SceneNet.i"
+	@echo "... SceneNet.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

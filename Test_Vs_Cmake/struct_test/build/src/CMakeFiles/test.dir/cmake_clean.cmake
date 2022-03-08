@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../../bin/test"
   "../../bin/test.pdb"
+  "CMakeFiles/test.dir/SceneNet.o"
   "CMakeFiles/test.dir/main.o"
 )
 
