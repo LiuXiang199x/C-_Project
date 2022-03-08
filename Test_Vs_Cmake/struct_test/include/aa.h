@@ -15,7 +15,7 @@ History:
 #ifndef EVEREST_AI_AI_H
 #define EVEREST_AI_AI_H
 #include "opencv2/opencv.hpp"
-
+#include <iostream>
 
 //#define CAP_IMAGE
 namespace everest
@@ -114,6 +114,12 @@ namespace everest
             FloorBlanketClass_title_floor   = 1,
             FloorBlanketClass_unknown       = 2,
             FloorBlanketClass_wood_floor    = 3,
+            
+            SceneClass_drawingRoom          = 4,
+            SceneClass_kitchen              = 5,
+            SceneClass_bedroom              = 6,
+            SceneClass_diningRoom           = 7,
+            SceneClass_others               = 8
         };
 
         //30cls
@@ -230,7 +236,6 @@ namespace everest
                 classify_score = 0.0;
                 timestamp = 0;
                 detect_img = cv::Mat();
-                robot_sensor = base::TRobotSensor();
                 detect_ori_image_debug_str = "";
             }
 
@@ -252,7 +257,6 @@ namespace everest
             long long timestamp;            
             cv::Mat  detect_img;
             std::string detect_ori_image_debug_str;
-            base::TRobotSensor  robot_sensor;
         };
 
         struct TCameraCalibresult
@@ -309,6 +313,13 @@ namespace everest
     }
 }
 
+struct stu{
+    stu(){
+        a = 10;
+    }
+    int a = 1;
+    int b = 2;
 
+};
 
 #endif
