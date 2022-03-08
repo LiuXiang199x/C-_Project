@@ -16,6 +16,11 @@ message(STATUS "    libraries: 	${OpenCV_LIBS}")
 
 # link headers 链接头文件
 INCLUDE_DIRECTORIES({OpenCV_INCLUDE_DIRS})
+
+# rknn api
+set(RKNN_API_PATH /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/librknn_api)
+include_directories(${RKNN_API_PATH}/include)
+set(RKNN_API_LIB ${RKNN_API_PATH}/${LIB_ARCH}/librknn_api.so)
 include_directories (../include)
 
 # set (SRC_LIST main.cpp)

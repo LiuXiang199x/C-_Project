@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../bin/rknn_class_infer"
-  "../bin/rknn_class_infer.pdb"
   "CMakeFiles/rknn_class_infer.dir/src/main.cpp.o"
+  "rknn_class_infer"
+  "rknn_class_infer.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

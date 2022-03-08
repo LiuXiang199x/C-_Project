@@ -5,6 +5,9 @@
         "random": "cpp",
         "*.expression": "cpp",
         "alignedvector3": "cpp",
-        "fft": "cpp"
+        "fft": "cpp",
+        "*.ipp": "cpp",
+        "iterator": "cpp",
+        "bvh": "cpp"
     }
 }

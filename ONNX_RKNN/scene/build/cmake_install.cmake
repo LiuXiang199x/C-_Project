@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/agent/C-_Project/ONNX_RKNN/scene/install/rknn_class_infer")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,6 +35,53 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./rknn_class_infer" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./rknn_class_infer")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./rknn_class_infer"
+         RPATH "lib")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/agent/C-_Project/ONNX_RKNN/scene/build/rknn_class_infer")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./rknn_class_infer" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./rknn_class_infer")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./rknn_class_infer"
+         OLD_RPATH "/home/agent/C-_Project/ONNX_RKNN/scene/librknn_api/lib:/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib:"
+         NEW_RPATH "lib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./rknn_class_infer")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "/home/agent/C-_Project/ONNX_RKNN/scene/model/SceneResnet18_18pth.rknn")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "/home/agent/C-_Project/ONNX_RKNN/scene/model/1.jpg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE PROGRAM FILES "/home/agent/C-_Project/ONNX_RKNN/scene/librknn_api/lib/librknn_api.so")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE PROGRAM FILES
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/libopencv_world.so"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/liblibjpeg-turbo.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/libade.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/libIlmImf.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/liblibjasper.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/liblibjpeg-turbo.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/liblibtiff.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/liblibwebp.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/libquirc.a"
+    "/home/agent/C-_Project/ONNX_RKNN/scene/libs/opencv/opencv410_arm32/lib/opencv4/3rdparty/libzlib.a"
+    )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

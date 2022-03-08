@@ -7,13 +7,9 @@
 #include <vector>
 #include <string.h>
 #include <uchar.h>
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/opencv.hpp>
-// #include "opencv2/core/core.hpp"
-// #include "opencv2/imgproc/imgproc.hpp"
-// #include "opencv2/imgcodecs.hpp"
+#include "opencv2/core/core.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/imgcodecs.hpp"
 
 #include "rknn_api.h"
 
@@ -103,6 +99,7 @@ int main(int argc, char** argv)
     // end_load_model_time = GetTickCount();
     long end_load_model = get_sys_time_interval();
     printf("end load model time:%ldms\n",end_load_model);
+    
     ret = rknn_init(&ctx, model, model_len, 0);
     gettimeofday(&end_init_time, nullptr);
     // end_load_model_time = GetTickCount();

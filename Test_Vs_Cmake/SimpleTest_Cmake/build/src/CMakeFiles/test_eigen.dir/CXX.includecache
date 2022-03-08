@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../librknn_api/include/rknn_api.h
+stdint.h
+-
+
 /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp
 iostream
 -
@@ -15,6 +19,22 @@ vector
 -
 math.h
 -
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+fstream
+-
+iostream
+-
+sys/time.h
+-
+string.h
+-
+uchar.h
+-
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -23,6 +43,8 @@ opencv2/imgproc/imgproc.hpp
 -
 opencv2/opencv.hpp
 -
+rknn_api.h
+/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/rknn_api.h
 
 /home/agent/anaconda3/envs/dlpy364/include/opencv/cxcore.h
 opencv2/core/core_c.h

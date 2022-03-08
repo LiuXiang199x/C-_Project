@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "../../bin/test_eigen.pdb"
   "CMakeFiles/test_eigen.dir/includeT.cpp.o"
   "CMakeFiles/test_eigen.dir/main.cpp.o"
-  "CMakeFiles/test_eigen.dir/rknn.cpp.o"
   "CMakeFiles/test_eigen.dir/test.cpp.o"
   "CMakeFiles/test_eigen.dir/test_eigen.cpp.o"
 )

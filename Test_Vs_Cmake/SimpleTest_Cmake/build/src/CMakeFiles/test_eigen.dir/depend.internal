@@ -6,6 +6,7 @@ src/CMakeFiles/test_eigen.dir/includeT.cpp.o
  ../include/test.h
  /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/includeT.cpp
 src/CMakeFiles/test_eigen.dir/main.cpp.o
+ ../librknn_api/include/rknn_api.h
  /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/main.cpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv/cxcore.h
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/calib3d.hpp
@@ -140,8 +141,6 @@ src/CMakeFiles/test_eigen.dir/main.cpp.o
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/videostab/stabilizer.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/videostab/wobble_suppression.hpp
  /home/agent/anaconda3/envs/dlpy364/include/opencv2/xfeatures2d/cuda.hpp
-src/CMakeFiles/test_eigen.dir/rknn.cpp.o
- /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/rknn.cpp
 src/CMakeFiles/test_eigen.dir/test.cpp.o
  ../include/test.h
  /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/src/test.cpp

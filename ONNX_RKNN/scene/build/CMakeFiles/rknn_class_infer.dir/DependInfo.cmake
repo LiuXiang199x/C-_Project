@@ -11,7 +11,9 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../librknn_api/include"
-  "../{OpenCV_INCLUDE_DIRS}"
+  "../libs/opencv/opencv410_arm32/include"
+  "../libs/opencv/opencv410_arm32/include/opencv4"
+  "../libs/opencv/opencv410_arm32/include/opencv4/opencv2"
   )
 
 # Targets to which this target links.
