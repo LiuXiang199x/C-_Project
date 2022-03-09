@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
 	# Build models
 	print("<======== Building RL model =========>")
-	ret_RL = rknn.build(do_quantization=True, dataset="/home/agent/C-_Project/PTH_ONNX_RKNN/quantization/quantization_.txt", pre_compile=False)
+	ret_RL = rknn.build(do_quantization=True, dataset="/home/agent/C-_Project/PTH_ONNX_RKNN/quantization/quantization_.txt", pre_compile=True)
 	if ret_RL != 0:
 		print("<======= Build RL model failed! =======>")
 		exit(ret_RL)
