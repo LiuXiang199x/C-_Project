@@ -215,6 +215,12 @@ rknn_class_infer_1126_linux_BINARY_DIR:STATIC=/home/agent/rk_test_project/exampl
 //Value Computed by CMake
 rknn_class_infer_1126_linux_SOURCE_DIR:STATIC=/home/agent/rk_test_project/examples/rknn_mobilenet_demo
 
+//Value Computed by CMake
+rknn_class_infer_linux_BINARY_DIR:STATIC=/home/agent/rk_test_project/examples/rknn_mobilenet_demo/build
+
+//Value Computed by CMake
+rknn_class_infer_linux_SOURCE_DIR:STATIC=/home/agent/rk_test_project/examples/rknn_mobilenet_demo
+
 
 ########################
 # INTERNAL cache entries
