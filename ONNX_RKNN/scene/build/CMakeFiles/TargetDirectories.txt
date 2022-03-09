@@ -1,7 +1,0 @@
-/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/install/strip.dir
-/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/install/local.dir
-/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/install.dir
-/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/list_install_components.dir
-/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/rebuild_cache.dir
-/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/edit_cache.dir
-/home/agent/C-_Project/ONNX_RKNN/scene/build/CMakeFiles/rknn_class_infer.dir

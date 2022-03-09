@@ -36,13 +36,15 @@ else()
   set(LIB_ARCH lib)
 endif()
 
+INCLUDE_DIRECTORIES(include)
+
 # rknn api
-set(RKNN_API_PATH ${CMAKE_SOURCE_DIR}/../../librknn_api)
+set(RKNN_API_PATH ${CMAKE_SOURCE_DIR}/librknn_api)
 include_directories(${RKNN_API_PATH}/include)
 set(RKNN_API_LIB ${RKNN_API_PATH}/${LIB_ARCH}/librknn_api.so)
 
 # opencv
-set(OPENCV_PATH ${CMAKE_SOURCE_DIR}/../libs/opencv/opencv410_arm32)
+set(OPENCV_PATH ${CMAKE_SOURCE_DIR}/libs/opencv/opencv410_arm32)
 include_directories(${OPENCV_PATH}/include)
 include_directories(${OPENCV_PATH}/include/opencv4/)
 include_directories(${OPENCV_PATH}/include/opencv4/opencv2)
@@ -67,7 +69,7 @@ set(CMAKE_INSTALL_RPATH "lib")
 
 add_executable(rknn_class_infer_1126
         #src/main_M.cc
-        src/class_infer.cc
+        src/main.cpp
         )
 
 target_link_libraries(rknn_class_infer_1126
@@ -81,8 +83,20 @@ target_link_libraries(rknn_class_infer_1126
 # install target and libraries
 set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/install/rknn_class_infer_1126)
 install(TARGETS rknn_class_infer_1126 DESTINATION ./)
-install(FILES model/mobilenet_v1.rknn DESTINATION ./)
-install(FILES model/dog_224x224.jpg DESTINATION ./)
+install(FILES model/SceneResnet18_18pth.rknn DESTINATION ./)
+install(FILES model/test_toilet.jpg DESTINATION ./)
 
 install(PROGRAMS ${RKNN_API_LIB} DESTINATION lib)
 install(PROGRAMS ${OPENCV_LIBS} DESTINATION lib)
+
+
+SET(SRC_LIST main.cpp SceneNet.cpp)
+# set(RKNN_API_LIB /home/agent/C-_Project/Test_Vs_Cmake/struct_test/librknn_api/lib64/librknn_api.so)
+
+add_executable (test ${SRC_LIST})
+
+# after ADD_EXECUTABLE，为生成文件target添加库，这个必须写在ADD_EXECUTABLE()之后，为生成文件target添加库。
+# TARGET_LINK_LIBRARIES(target library1 <debug | optimized> library2...)
+target_link_libraries(test ${OpenCV_LIBS} ${RKNN_API_LIB})
+
+set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
