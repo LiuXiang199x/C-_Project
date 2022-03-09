@@ -155,21 +155,6 @@ main.s:
 	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/main.s
 .PHONY : main.s
 
-# target to build an object file
-testClass.o:
-	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/testClass.o
-.PHONY : testClass.o
-
-# target to preprocess a source file
-testClass.i:
-	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/testClass.i
-.PHONY : testClass.i
-
-# target to generate assembly for a file
-testClass.s:
-	cd /home/agent/C-_Project/Test_Vs_Cmake/struct_test/build && $(MAKE) -f src/CMakeFiles/test.dir/build.make src/CMakeFiles/test.dir/testClass.s
-.PHONY : testClass.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,9 +170,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... testClass.o"
-	@echo "... testClass.i"
-	@echo "... testClass.s"
 .PHONY : help
 
 

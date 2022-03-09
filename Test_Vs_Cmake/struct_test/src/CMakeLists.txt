@@ -2,7 +2,7 @@ FIND_PACKAGE(OpenCV REQUIRED)
 
 INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS} ../include ../librknn_api/include)
 
-SET(SRC_LIST main.cpp SceneNet.cpp testClass.cpp)
+SET(SRC_LIST main.cpp SceneNet.cpp)
 # set(RKNN_API_LIB /home/agent/C-_Project/Test_Vs_Cmake/struct_test/librknn_api/lib64/librknn_api.so)
 
 add_executable (test ${SRC_LIST})

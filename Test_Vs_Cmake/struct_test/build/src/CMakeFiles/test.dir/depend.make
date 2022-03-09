@@ -138,7 +138,6 @@ src/CMakeFiles/test.dir/SceneNet.o: /usr/include/opencv4/opencv2/viz/widgets.hpp
 
 src/CMakeFiles/test.dir/main.o: ../include/SceneNet.h
 src/CMakeFiles/test.dir/main.o: ../include/aa.h
-src/CMakeFiles/test.dir/main.o: ../include/testClass.h
 src/CMakeFiles/test.dir/main.o: ../librknn_api/include/rknn_api.h
 src/CMakeFiles/test.dir/main.o: ../src/main.cpp
 src/CMakeFiles/test.dir/main.o: /usr/include/opencv4/opencv2/calib3d.hpp
@@ -271,7 +270,4 @@ src/CMakeFiles/test.dir/main.o: /usr/include/opencv4/opencv2/viz/types.hpp
 src/CMakeFiles/test.dir/main.o: /usr/include/opencv4/opencv2/viz/viz3d.hpp
 src/CMakeFiles/test.dir/main.o: /usr/include/opencv4/opencv2/viz/vizcore.hpp
 src/CMakeFiles/test.dir/main.o: /usr/include/opencv4/opencv2/viz/widgets.hpp
-
-src/CMakeFiles/test.dir/testClass.o: ../include/testClass.h
-src/CMakeFiles/test.dir/testClass.o: ../src/testClass.cpp
 
