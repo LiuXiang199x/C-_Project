@@ -9,7 +9,7 @@ import numpy as np
 torch.manual_seed(1)    # reproducible
 
 fake_img = torch.rand(1, 3, 224, 224)
-img2 = torch.rand(13)
+img2 = torch.tensor((0,0,0,0,0,0,0,0,0,1,0,0,0))
 print("img2:", img2)
 net = AllModel(num_classes=6)
 net.eval()
