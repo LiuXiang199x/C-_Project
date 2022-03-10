@@ -8,6 +8,9 @@
         "fft": "cpp",
         "*.ipp": "cpp",
         "iterator": "cpp",
-        "bvh": "cpp"
+        "bvh": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "chrono": "cpp"
     }
 }
