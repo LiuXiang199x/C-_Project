@@ -10,12 +10,12 @@ make install
 ## install
 
 ```
-adb push install/rknn_mobilenet_demo /userdata/
+adb push install/sceneClass /userdata/
 ```
 
-## run
+## others
 ```
-adb shell
-cd /userdata/rknn_mobilenet_demo/
-./rknn_mobilenet_demo mobilenet_v1.rknnn dog_224x224.jpg
+replace aa.h with everest/ai.h
+Final output of room type  ---> roomType
+Public func: runSceneNet(float *Nanodet_res) --> [float_, ..]
 ```

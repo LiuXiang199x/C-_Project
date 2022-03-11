@@ -1240,6 +1240,9 @@ unsigned char *SceneNet::load_model(const char *filename, int *model_size)
 
 int SceneNet::runSceneNet(float *Nanodet_res)
 {
+    // INITIALIZE ROOM TYPE
+    roomType = AI_ROOM;
+
     timeval start_time,end_load_model_time,end_init_time,end_run_time,end_process_time, stop_time;
     gettimeofday(&start_time, nullptr);
     // start_time = GetTickCount();

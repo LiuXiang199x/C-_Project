@@ -29,10 +29,13 @@ using namespace std;
 int main()
 {
 	printf("hello world\n");
-	float tmp_Nano[13] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0};
+	float tmp_Nano[13] = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	float tmp_Scene[512] = {1};
 
+    string url1 = "/tmp/test/img/val/bed_room/";
+    
     everest::ai::SceneNet a;
+
     a.runSceneNet(tmp_Nano);
 
 	return 0;
