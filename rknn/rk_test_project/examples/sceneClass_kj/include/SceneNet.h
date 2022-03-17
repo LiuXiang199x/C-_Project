@@ -20,6 +20,7 @@
 
 #include <aa.h>   // everest/ai.h
 #include "rknn_api.h"
+#include "LoadParams.h"
 
 #include <vector>
 #include <string>
@@ -28,15 +29,9 @@
 
 namespace everest{
     namespace ai{
-        class SceneNet{
+        class SceneNet: public NetParams{
             public:
                 int runSceneNet(cv::Mat& src, float *Nanodet_res);
-            
-            public:
-                Eigen::Matrix<float, 5, 1> class_fc_bias;
-                Eigen::Matrix<float, 512, 1> obj_fc_bias;
-                Eigen::Matrix<float, 5, 1024> class_fc_weight;
-                Eigen::Matrix<float, 512, 13> obj_fc_weight;
                 
                 TAIObjectClass roomType;
                 // rknn_context m_ctx;
@@ -46,8 +41,6 @@ namespace everest{
                 // const char *img_path = "/tmp/test/rknn_testModel/model/test_toilet.jpg";
                 
             public:
-                // load params of fc layers
-                void load_params();
                 // init rk models
                 int init_rknn();
                 void printRKNNTensor(rknn_tensor_attr *attr);
