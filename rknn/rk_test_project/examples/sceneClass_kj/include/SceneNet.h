@@ -30,7 +30,7 @@ namespace everest{
     namespace ai{
         class SceneNet{
             public:
-                int runSceneNet(float *Nanodet_res);
+                int runSceneNet(cv::Mat& src, float *Nanodet_res);
             
             public:
                 Eigen::Matrix<float, 5, 1> class_fc_bias;

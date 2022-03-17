@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/father.h
+iostream
+-
+
+../include/son.h
+father.h
+../include/father.h
+
+/home/marco/C-_Project/Test_Vs_Cmake/继承测试/src/main.cc
+son.h
+/home/marco/C-_Project/Test_Vs_Cmake/继承测试/src/son.h
+

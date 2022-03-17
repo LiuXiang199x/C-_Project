@@ -28,15 +28,15 @@ using namespace std;
 
 int main()
 {
-	printf("hello world\n");
 	float tmp_Nano[13] = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-	float tmp_Scene[512] = {1};
-
-    string url1 = "/tmp/test/img/val/bed_room/";
+	
+    // change it to Mat
+    // float tmp_Scene[512] = {1};
+    cv::Mat img = cv::imread(img_path);
     
     everest::ai::SceneNet a;
 
-    a.runSceneNet(tmp_Nano);
+    a.runSceneNet(img, tmp_Nano);
 
 	return 0;
 } 
