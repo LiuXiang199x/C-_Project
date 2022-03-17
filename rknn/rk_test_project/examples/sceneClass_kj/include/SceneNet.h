@@ -43,7 +43,7 @@ namespace everest{
                 rknn_context m_ctx;
                 unsigned char *m_model;
                 const char *model_path = "/tmp/test/rknn_testModel/model/abc.rknn";
-                const char *img_path = "/tmp/test/rknn_testModel/model/test_toilet.jpg";
+                // const char *img_path = "/tmp/test/rknn_testModel/model/test_toilet.jpg";
                 
             public:
                 // load params of fc layers
