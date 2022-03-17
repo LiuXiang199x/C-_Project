@@ -1,0 +1,14 @@
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/./rknn_class_infer_1126_linux_scene
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/./SceneResnet18_18pth.rknn
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/./test_toilet.jpg
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/librknn_api.so
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/libopencv_world.so
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/liblibjpeg-turbo.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/libade.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/libIlmImf.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/liblibjasper.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/liblibjpeg-turbo.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/liblibtiff.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/liblibwebp.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/libquirc.a
+/home/agent/rk_test_project/examples/sceneClass/install/rknn_class_infer_1126_linux_scene/lib/libzlib.a
