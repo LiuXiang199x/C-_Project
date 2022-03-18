@@ -8,6 +8,7 @@ import numpy as np
 
 torch.manual_seed(1)    # reproducible
 
+# 224*224 -> 640*360
 fake_img = torch.rand(1, 3, 224, 224)
 
 
