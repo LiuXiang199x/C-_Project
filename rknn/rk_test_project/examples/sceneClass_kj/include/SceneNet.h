@@ -51,7 +51,7 @@ namespace everest{
 
             public:
                 // get model output 13: model_output1->upSample +(concat)+ nanoplus_output->upSample -> softmax -> five classes
-                void sceneClass(float *Nanodet_res, float *Scene_res);
+                int sceneClass(float *Nanodet_res, float *Scene_res);
                 uint64_t time_tToTimestamp(const time_t &t );
                 uint64_t get_sys_time_interval();
         };
