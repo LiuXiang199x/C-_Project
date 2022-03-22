@@ -1,0 +1,25 @@
+git config --global user.name "zhang kj"
+git config --global user.email "zhangkj1244@3irobotics.com"
+
+Create a new repository
+git clone git@10.110.1.253:zhangkj1244/ai-app-9090.git
+cd ai-app-9090
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Push an existing folder
+cd existing_folder
+git init
+git remote add origin git@10.110.1.253:zhangkj1244/ai-app-9090.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Push an existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin git@10.110.1.253:zhangkj1244/ai-app-9090.git
+git push -u origin --all
+git push -u origin --tags
