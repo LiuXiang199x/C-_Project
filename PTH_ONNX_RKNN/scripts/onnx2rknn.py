@@ -8,7 +8,7 @@ import numpy as np
 from rknn.api import RKNN
 
 ONNX_MODEL = '/home/agent/C-_Project/PTH_ONNX_RKNN/models/onnx/SceneResnet18_18pth_352.onnx'
-RKNN_MODEL = '/home/agent/C-_Project/PTH_ONNX_RKNN/models/rknn/SceneResnet18_18pth_352.rknn'
+RKNN_MODEL = '/home/agent/C-_Project/PTH_ONNX_RKNN/models/rknn/SceneResnet18_1126_352.rknn'
 
 
 def show_outputs(outputs):
@@ -82,11 +82,12 @@ if __name__ == '__main__':
     # pre-process config
     print('--> config model')
 
-    #1806-regnet
-    # rknn.config(mean_values=[[123.675, 116.28, 103.53]], std_values=[[58.395, 57.12, 57.375]], reorder_channel='0 1 2', target_platform=['rv1126', 'rv1109'])
+    #1126-regnet
+    rknn.config(mean_values=[[123.675, 116.28, 103.53]], std_values=[[58.395, 57.12, 57.375]], reorder_channel='0 1 2', target_platform=['rv1126', 'rv1109'])
     # rknn.config(batch_size=1, mean_values=[[123.675, 116.28, 103.53]], std_values=[[58.395, 57.12, 57.375]], reorder_channel='0 1 2', target_platform=['rv1109','rv1126'])
+    
     #1806-efficinet
-    rknn.config(batch_size=1, mean_values=[[123.675, 116.28, 103.53]], std_values=[[58.395, 57.12, 57.375]], reorder_channel='0 1 2')
+    # rknn.config(batch_size=1, mean_values=[[123.675, 116.28, 103.53]], std_values=[[58.395, 57.12, 57.375]], reorder_channel='0 1 2')
     #vgg16-gem [0.485, 0.456, 0.406]
     #1126-efficientet
     #rknn.config(batch_size=1, mean_values=[[127.5, 127.5, 127.5]], std_values=[[127.5, 127.5, 127.5]], reorder_channel='0 1 2', target_platform=['rv1109','rv1126'])
