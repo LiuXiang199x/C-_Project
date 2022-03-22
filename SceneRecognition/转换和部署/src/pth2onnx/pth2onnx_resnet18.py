@@ -2,18 +2,18 @@ from tabnanny import check
 import resnet_net
 import torch
 import onnx
-import onnxruntime
+# import onnxruntime
 import numpy as np
 
 
 torch.manual_seed(1)    # reproducible
 
 # 224*224 -> 640*360
-fake_img = torch.rand(1, 3, 224, 224)
+fake_img = torch.rand(1, 3, 352, 352)
 
 
 net = resnet_net.resnet18(num_classes=5)
-checkpoint = torch.load("/home/agent/C-_Project/SceneRecognition/转换和部署/models/pth_model/resnet18_latest_combined_v9.pth.tar", map_location=lambda storage, loc: storage)
+checkpoint = torch.load("/home/agent/C-_Project/SceneRecognition/Final/models/352x352/resnet18_latest_combined_v83.pth.tar", map_location=lambda storage, loc: storage)
 #print(checkpoint)
 model_state_dict = {str.replace(k,'module.',''): v for k,v in checkpoint['model_state_dict'].items()}
 net.load_state_dict(model_state_dict)
@@ -23,7 +23,7 @@ print("Shape of prediction pth model：", net(fake_img).shape)
 # print(print("[:5] of prediction pth model：", net(fake_img)))
 
 def test():
-    M = 224
+    M = 352
     batch_size = 1
     input_shape = (3, M, M)
     model = net
@@ -40,7 +40,7 @@ def test():
 
     # # Export the model
     torch.onnx.export(model, fake_img,
-                      "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18_18pth.onnx", 
+                      "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18_18pth_352.onnx", 
                       opset_version=10)
                       #keep_initializers_as_inputs=True, 
                       # verbose=True
@@ -58,31 +58,31 @@ def test():
                      )
     '''
     print("=============Successful==========")
+
+# def check_pth_onnx():
     
-def check_pth_onnx():
+#     print("============= Checking pth model ============")
+#     pred = net(fake_img)
+#     print("pth model output pred[:9]:\n", pred[0][:9])  # shape (1,512)
     
-    print("============= Checking pth model ============")
-    pred = net(fake_img)
-    print("pth model output pred[:9]:\n", pred[0][:9])  # shape (1,512)
+#     print("============= Checking onnx model ============")
+#     # print("torch.__version__:", torch.__version__) # torch.__version__: 1.7.1
+#     # print("onnx.__version__:", onnx.__version__) # onnx.__version__: 1.11.0
+#     # print("onnxruntime.__version__:", onnxruntime.__version__) # onnxruntime.__version__: 1.10.0
     
-    print("============= Checking onnx model ============")
-    # print("torch.__version__:", torch.__version__) # torch.__version__: 1.7.1
-    # print("onnx.__version__:", onnx.__version__) # onnx.__version__: 1.11.0
-    # print("onnxruntime.__version__:", onnxruntime.__version__) # onnxruntime.__version__: 1.10.0
-    
-    onnx_path = "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18_18pth.onnx"
-    # onnx_model = onnx.load(onnx_path)
-    # print(onnx.checker.check_model(onnx_model))
+#     onnx_path = "/home/agent/C-_Project/SceneRecognition/转换和部署/models/onnx_model/SceneResnet18_18pth.onnx"
+#     # onnx_model = onnx.load(onnx_path)
+#     # print(onnx.checker.check_model(onnx_model))
 
-    ort_session = onnxruntime.InferenceSession(onnx_path)
+#     ort_session = onnxruntime.InferenceSession(onnx_path)
 
-    # compute ONNX Runtime output prediction
-    ort_outs = ort_session.run(None, {ort_session.get_inputs()[0].name: fake_img.cpu().numpy().astype(np.float32)})
+#     # compute ONNX Runtime output prediction
+#     ort_outs = ort_session.run(None, {ort_session.get_inputs()[0].name: fake_img.cpu().numpy().astype(np.float32)})
 
-    # compare ONNX Runtime and PyTorch results
+#     # compare ONNX Runtime and PyTorch results
 
-    print("onnx model output ort_outs[0][0][:9]:\n", ort_outs[0][0][:9])  # shape (1,1,512)
-    # print('tor_out: ', torch_out.detach().numpy().shape)
+#     print("onnx model output ort_outs[0][0][:9]:\n", ort_outs[0][0][:9])  # shape (1,1,512)
+#     # print('tor_out: ', torch_out.detach().numpy().shape)
 
-# test()
-check_pth_onnx()
+test()
+# check_pth_onnx()
