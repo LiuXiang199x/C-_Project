@@ -11,8 +11,10 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
+  "../{OpenCV_INCLUDE_DIRS}"
   "/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/librknn_api/include"
-  "/home/agent/rk_test_project/examples/libs/opencv/opencv410_aarch64/include"
+  "/home/agent/anaconda3/envs/dlpy364/include"
+  "/home/agent/anaconda3/envs/dlpy364/include/opencv"
   )
 
 # Targets to which this target links.

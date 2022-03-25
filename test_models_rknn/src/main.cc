@@ -1,7 +1,8 @@
 // #include "SceneNet.h"
-#include "opencv2/core/core.hpp"
+#include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
-#include "opencv2/imgcodecs.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/videoio.hpp"
 #include <iostream>
 #include "rknn_api.h"
 /*
@@ -33,11 +34,21 @@ using namespace std;
 int main()
 {
 	printf("hello world\n");
-	float tmp_Nano[13] = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-	float tmp_Scene[512] = {1};
+    
+    cv::Mat img = cv::imread("/home/agent/C-_Project/test_models_rknn/val/bed_room/RGB100W_542500000083_116445085381751238.jpg");
+    if(img.empty()) return -1;
+    
+    // cout << img.type() << endl;    // 16
 
-    string url1 = "/tmp/test/img/val/bed_room/";
-
+    // 一个像素占 8/16/32位
+    cout << img.depth() << endl;   // 0  获取图像位深度，(即矩阵元素的存储方式,存储每个像素所用的位数)
+    // cout << img.rows() << endl;
+    cout << img.channels() << endl;  // 3
+    cout << img.rows << endl;   // 360
+    cout << img.cols << endl;   // 640
+    cout << img(0) << endl;
+    cv::imshow("aaa", img);
+    cv::waitKey(0);
 
 	return 0;
 } 
