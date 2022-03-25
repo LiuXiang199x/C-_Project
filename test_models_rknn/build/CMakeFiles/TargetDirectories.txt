@@ -1,0 +1,3 @@
+/home/agent/C-_Project/test_models_rknn/build/CMakeFiles/edit_cache.dir
+/home/agent/C-_Project/test_models_rknn/build/CMakeFiles/rebuild_cache.dir
+/home/agent/C-_Project/test_models_rknn/build/CMakeFiles/test_eigen.dir

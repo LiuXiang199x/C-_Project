@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++0x -O3 -mtune=native    CMakeFiles/test_eigen.dir/src/main.cc.o  -o ../bin/test_eigen  -Wl,-rpath,/home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/librknn_api/lib64 /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/librknn_api/lib64/librknn_api.so 
