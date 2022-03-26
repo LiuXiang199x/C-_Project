@@ -11,3 +11,5 @@ fnano = open("/home/agent/C-_Project/test_models_rknn/nano_ress.txt", "w")
 for item in f_nano:
     a = item.replace("[","").replace("]","")
     fnano.writelines(a)
+
+print("done")
