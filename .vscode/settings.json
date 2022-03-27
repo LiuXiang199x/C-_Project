@@ -12,6 +12,7 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "chrono": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "fstream": "cpp"
     }
 }

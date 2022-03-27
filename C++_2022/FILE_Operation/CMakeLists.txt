@@ -6,4 +6,4 @@ include_directories(include)
 
 add_executable(test src/main.cc)
 
-set(EXECUTABLE_OUTPUT_PATH bin)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
