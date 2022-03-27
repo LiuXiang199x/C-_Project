@@ -24,7 +24,7 @@ message(STATUS "    libraries: 	${OpenCV_LIBS}")
 INCLUDE_DIRECTORIES({OpenCV_INCLUDE_DIRS})
 
 # rknn api
-set(RKNN_API_PATH /home/marco/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/librknn_api)
+set(RKNN_API_PATH /home/agent/C-_Project/Test_Vs_Cmake/SimpleTest_Cmake/librknn_api)
 include_directories(${RKNN_API_PATH}/include)
 set(RKNN_API_LIB ${RKNN_API_PATH}/lib64/librknn_api.so)
 
