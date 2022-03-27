@@ -1,0 +1,3 @@
+/home/marco/C-_Project/C_opencv/build/CMakeFiles/rebuild_cache.dir
+/home/marco/C-_Project/C_opencv/build/CMakeFiles/edit_cache.dir
+/home/marco/C-_Project/C_opencv/build/CMakeFiles/test.dir
