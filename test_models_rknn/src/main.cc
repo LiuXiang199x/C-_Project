@@ -48,7 +48,7 @@ int main()
     cout << img.cols << endl;   // 640
     cout << img(0) << endl;
     cv::imshow("aaa", img);
-    cv::waitKey(0);
+    // 
 
 	return 0;
 } 
