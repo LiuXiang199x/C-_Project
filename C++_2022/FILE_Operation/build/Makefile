@@ -150,6 +150,33 @@ src/main.cc.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/write2file.o: src/write2file.cpp.o
+
+.PHONY : src/write2file.o
+
+# target to build an object file
+src/write2file.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/write2file.cpp.o
+.PHONY : src/write2file.cpp.o
+
+src/write2file.i: src/write2file.cpp.i
+
+.PHONY : src/write2file.i
+
+# target to preprocess a source file
+src/write2file.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/write2file.cpp.i
+.PHONY : src/write2file.cpp.i
+
+src/write2file.s: src/write2file.cpp.s
+
+.PHONY : src/write2file.s
+
+# target to generate assembly for a file
+src/write2file.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/write2file.cpp.s
+.PHONY : src/write2file.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/write2file.o"
+	@echo "... src/write2file.i"
+	@echo "... src/write2file.s"
 .PHONY : help
 
 
