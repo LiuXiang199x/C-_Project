@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/agent/C-_Project/C++_2022/FILE_Operation/include 
+CXX_INCLUDES = -I/home/agent/C-_Project/C++_2022/OpenCV/{OpenCV_INCLUDE_DIRS} 
 

@@ -1,10 +1,10 @@
 #include <iostream>
-#include "opencv2/core.hpp"
+//#include "opencv2/opencv.hpp"
 
 using namespace std;
 
 int main(){
 
-    printf("hello, world");
+    printf("hello, world\n");
     return 0;
 }
