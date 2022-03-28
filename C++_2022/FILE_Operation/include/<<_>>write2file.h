@@ -3,4 +3,4 @@
 #include "string.h"
 
 
-int test();
+int test1();

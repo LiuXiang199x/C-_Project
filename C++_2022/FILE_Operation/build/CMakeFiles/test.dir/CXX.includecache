@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/write2file.h
-iostream
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/<<_>>write2file.cpp
+<<_
 -
-fstream
--
-string.h
-../include/string.h
 
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/write2file.cpp
-write2file.h
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/write2file.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc
+<<_
+-
 

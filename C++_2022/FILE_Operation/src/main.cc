@@ -1,9 +1,9 @@
-#include "write2file.h"
+#include "<<_>>write2file.h"
 
 using namespace std;
 
 int main() {
-    test();
+    test1();
 
     return 0;
 }

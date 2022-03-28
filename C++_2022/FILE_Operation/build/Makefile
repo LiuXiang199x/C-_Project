@@ -123,6 +123,33 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+src/<<_>>write2file.o: src/<<_>>write2file.cpp.o
+
+.PHONY : src/<<_>>write2file.o
+
+# target to build an object file
+src/<<_>>write2file.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make "CMakeFiles/test.dir/src/<<_>>write2file.cpp.o"
+.PHONY : src/<<_>>write2file.cpp.o
+
+src/<<_>>write2file.i: src/<<_>>write2file.cpp.i
+
+.PHONY : src/<<_>>write2file.i
+
+# target to preprocess a source file
+src/<<_>>write2file.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make "CMakeFiles/test.dir/src/<<_>>write2file.cpp.i"
+.PHONY : src/<<_>>write2file.cpp.i
+
+src/<<_>>write2file.s: src/<<_>>write2file.cpp.s
+
+.PHONY : src/<<_>>write2file.s
+
+# target to generate assembly for a file
+src/<<_>>write2file.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make "CMakeFiles/test.dir/src/<<_>>write2file.cpp.s"
+.PHONY : src/<<_>>write2file.cpp.s
+
 src/main.o: src/main.cc.o
 
 .PHONY : src/main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... src/<<_>>write2file.o"
+	@echo "... src/<<_>>write2file.i"
+	@echo "... src/<<_>>write2file.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
