@@ -11,8 +11,8 @@ int test1(){
     // gs.open("../files/test3.txt", ios::out);
     ifstream srcFile("../files/test3.txt", ios::in);
 
-    cout << typeid(srcFile).name() << endl;    // 存在返回1，不存在返回0
-    cout << !srcFile << endl;   // 1
+    // cout << typeid(srcFile).name() << endl;    // 存在返回1，不存在返回0
+    // cout << !srcFile << endl;   // 1
 
     if (!srcFile){
         cout << "error opening source file." << endl;
@@ -20,9 +20,23 @@ int test1(){
     }
 
     // 以文本模式打开test3.txt备写
-    ofstream destFile("../files/test3.txt", ios::out);
+    ofstream destFile("../files/test4.txt", ios::out);
+    if(!destFile){
+        srcFile.close();
+        cout << "error opening destination file." << endl;
+        return 0;
+    }
 
+    // 可以像用cin那样用ifstream对象
+    while (srcFile >> x){
+        sum += x;
+        // 可以像 cout 那样使用 ofstream 对象
+        destFile << x << " ";
+    }
 
+    cout << "sum: " << sum << endl;
+    destFile.close();
+    srcFile.close();
 
     return 0;
 }
