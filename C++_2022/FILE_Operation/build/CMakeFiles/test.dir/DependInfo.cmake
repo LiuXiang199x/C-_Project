@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/agent/C-_Project/C++_2022/FILE_Operation/src/<<_>>write2file.cpp" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/<<_>>write2file.cpp.o"
-  "/home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/main.cc.o"
-  "/home/agent/C-_Project/C++_2022/FILE_Operation/src/write2file.cpp" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/write2file.cpp.o"
+  "/home/marco/C-_Project/C++_2022/FILE_Operation/src/<<_>>write2file.cpp" "/home/marco/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/<<_>>write2file.cpp.o"
+  "/home/marco/C-_Project/C++_2022/FILE_Operation/src/main.cc" "/home/marco/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/main.cc.o"
+  "/home/marco/C-_Project/C++_2022/FILE_Operation/src/write2file.cpp" "/home/marco/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/write2file.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
