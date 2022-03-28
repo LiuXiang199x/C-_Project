@@ -1,3 +1,6 @@
+https://www.runoob.com/cplusplus/cpp-dynamic-memory.html
+http://c.biancheng.net/view/7596.html
+
 1. void open(const char* szFileName, int mode)
     第一个参数是指向文件名的指针，第二个参数是文件的打开模式标记。
 
