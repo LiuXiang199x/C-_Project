@@ -27,3 +27,4 @@ http://c.biancheng.net/view/7596.html
         从文件中读数据：F1 >> x;
         数据存储到文件：x << F2;
 
+5. 二进制文件读写:

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marco/C-_Project/C++_2022/FILE_Operation
+CMAKE_SOURCE_DIR = /home/agent/C-_Project/C++_2022/FILE_Operation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marco/C-_Project/C++_2022/FILE_Operation/build
+CMAKE_BINARY_DIR = /home/agent/C-_Project/C++_2022/FILE_Operation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles /home/marco/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles /home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ src/<<_>>write2file.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make "CMakeFiles/test.dir/src/<<_>>write2file.cpp.s"
 .PHONY : src/<<_>>write2file.cpp.s
 
+src/PCres.o: src/PCres.cpp.o
+
+.PHONY : src/PCres.o
+
+# target to build an object file
+src/PCres.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/PCres.cpp.o
+.PHONY : src/PCres.cpp.o
+
+src/PCres.i: src/PCres.cpp.i
+
+.PHONY : src/PCres.i
+
+# target to preprocess a source file
+src/PCres.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/PCres.cpp.i
+.PHONY : src/PCres.cpp.i
+
+src/PCres.s: src/PCres.cpp.s
+
+.PHONY : src/PCres.s
+
+# target to generate assembly for a file
+src/PCres.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/PCres.cpp.s
+.PHONY : src/PCres.cpp.s
+
 src/main.o: src/main.cc.o
 
 .PHONY : src/main.o
@@ -216,6 +243,9 @@ help:
 	@echo "... src/<<_>>write2file.o"
 	@echo "... src/<<_>>write2file.i"
 	@echo "... src/<<_>>write2file.s"
+	@echo "... src/PCres.o"
+	@echo "... src/PCres.i"
+	@echo "... src/PCres.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

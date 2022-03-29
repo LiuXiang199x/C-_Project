@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/marco/C-_Project/C++_2022/FILE_Operation/src/<<_>>write2file.cpp
+../include/PCres.h
+iostream
+-
+string
+-
+string.h
+../include/string.h
+fstream
+-
+
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.cpp
+PCres.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.h
+
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc
 <<_
 -
+PCres.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.h
 

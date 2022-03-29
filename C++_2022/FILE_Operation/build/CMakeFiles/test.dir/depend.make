@@ -3,6 +3,10 @@
 
 CMakeFiles/test.dir/src/<<_>>write2file.cpp.o: ../src/<<_>>write2file.cpp
 
+CMakeFiles/test.dir/src/PCres.cpp.o: ../include/PCres.h
+CMakeFiles/test.dir/src/PCres.cpp.o: ../src/PCres.cpp
+
+CMakeFiles/test.dir/src/main.cc.o: ../include/PCres.h
 CMakeFiles/test.dir/src/main.cc.o: ../src/main.cc
 
 CMakeFiles/test.dir/src/write2file.cpp.o: ../include/write2file.h
