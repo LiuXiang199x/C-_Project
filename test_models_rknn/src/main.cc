@@ -35,7 +35,7 @@ int main()
 {
 	printf("hello world\n");
     
-    cv::Mat img = cv::imread("/home/marco/C-_Project/test_models_rknn/val/bed_room/RGB100W_542500000083_116445085381751238.jpg");
+    cv::Mat img = cv::imread("../val/bed_room/RGB100W_542500000083_116445085381751238.jpg");
     if(img.empty()) return -1;
     
     // cout << img.type() << endl;    // 16
@@ -47,7 +47,7 @@ int main()
     cout << img.rows << endl;   // 360
     cout << img.cols << endl;   // 640
     cout << img(0) << endl;
-    cv::imshow("aaa", img);
+    cout << "11111111111" << endl;
 
 	return 0;
 } 

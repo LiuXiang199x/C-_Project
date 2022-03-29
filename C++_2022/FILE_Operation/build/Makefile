@@ -150,6 +150,33 @@ src/<<_>>write2file.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make "CMakeFiles/test.dir/src/<<_>>write2file.cpp.s"
 .PHONY : src/<<_>>write2file.cpp.s
 
+src/GetPut.o: src/GetPut.cpp.o
+
+.PHONY : src/GetPut.o
+
+# target to build an object file
+src/GetPut.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GetPut.cpp.o
+.PHONY : src/GetPut.cpp.o
+
+src/GetPut.i: src/GetPut.cpp.i
+
+.PHONY : src/GetPut.i
+
+# target to preprocess a source file
+src/GetPut.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GetPut.cpp.i
+.PHONY : src/GetPut.cpp.i
+
+src/GetPut.s: src/GetPut.cpp.s
+
+.PHONY : src/GetPut.s
+
+# target to generate assembly for a file
+src/GetPut.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GetPut.cpp.s
+.PHONY : src/GetPut.cpp.s
+
 src/PCres.o: src/PCres.cpp.o
 
 .PHONY : src/PCres.o
@@ -270,6 +297,9 @@ help:
 	@echo "... src/<<_>>write2file.o"
 	@echo "... src/<<_>>write2file.i"
 	@echo "... src/<<_>>write2file.s"
+	@echo "... src/GetPut.o"
+	@echo "... src/GetPut.i"
+	@echo "... src/GetPut.s"
 	@echo "... src/PCres.o"
 	@echo "... src/PCres.i"
 	@echo "... src/PCres.s"

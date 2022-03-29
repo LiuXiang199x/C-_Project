@@ -1,10 +1,10 @@
-#include "ReadWriteBinaryf.h"
+#include "GetPut.h"
 
 using namespace std;
 
 
 int main() {
-    readfrombinary();
+    test_put();
 
     return 0;
 }

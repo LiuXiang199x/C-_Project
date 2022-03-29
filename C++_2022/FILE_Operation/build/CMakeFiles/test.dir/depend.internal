@@ -3,6 +3,9 @@
 
 CMakeFiles/test.dir/src/<<_>>write2file.cpp.o
  /home/agent/C-_Project/C++_2022/FILE_Operation/src/<<_>>write2file.cpp
+CMakeFiles/test.dir/src/GetPut.cpp.o
+ ../include/GetPut.h
+ /home/agent/C-_Project/C++_2022/FILE_Operation/src/GetPut.cpp
 CMakeFiles/test.dir/src/PCres.cpp.o
  ../include/PCres.h
  /home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.cpp
@@ -10,7 +13,7 @@ CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o
  ../include/ReadWriteBinaryf.h
  /home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.cpp
 CMakeFiles/test.dir/src/main.cc.o
- ../include/ReadWriteBinaryf.h
+ ../include/GetPut.h
  /home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc
 CMakeFiles/test.dir/src/write2file.cpp.o
  ../include/write2file.h

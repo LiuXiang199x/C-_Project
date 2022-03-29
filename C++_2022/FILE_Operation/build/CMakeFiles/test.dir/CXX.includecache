@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../include/ReadWriteBinaryf.h
+../include/GetPut.h
 iostream
 -
 fstream
 -
 
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.cpp
-ReadWriteBinaryf.h
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.h
-
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc
-ReadWriteBinaryf.h
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/GetPut.cpp
+GetPut.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/GetPut.h
 
