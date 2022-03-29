@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/agent/C-_Project/C++_2022/FILE_Operation/src/<<_>>write2file.cpp" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/<<_>>write2file.cpp.o"
   "/home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.cpp" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/PCres.cpp.o"
+  "/home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.cpp" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o"
   "/home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/main.cc.o"
   "/home/agent/C-_Project/C++_2022/FILE_Operation/src/write2file.cpp" "/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles/test.dir/src/write2file.cpp.o"
   )

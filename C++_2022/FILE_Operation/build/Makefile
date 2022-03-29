@@ -177,6 +177,33 @@ src/PCres.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/PCres.cpp.s
 .PHONY : src/PCres.cpp.s
 
+src/ReadWriteBinaryf.o: src/ReadWriteBinaryf.cpp.o
+
+.PHONY : src/ReadWriteBinaryf.o
+
+# target to build an object file
+src/ReadWriteBinaryf.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o
+.PHONY : src/ReadWriteBinaryf.cpp.o
+
+src/ReadWriteBinaryf.i: src/ReadWriteBinaryf.cpp.i
+
+.PHONY : src/ReadWriteBinaryf.i
+
+# target to preprocess a source file
+src/ReadWriteBinaryf.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.i
+.PHONY : src/ReadWriteBinaryf.cpp.i
+
+src/ReadWriteBinaryf.s: src/ReadWriteBinaryf.cpp.s
+
+.PHONY : src/ReadWriteBinaryf.s
+
+# target to generate assembly for a file
+src/ReadWriteBinaryf.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.s
+.PHONY : src/ReadWriteBinaryf.cpp.s
+
 src/main.o: src/main.cc.o
 
 .PHONY : src/main.o
@@ -246,6 +273,9 @@ help:
 	@echo "... src/PCres.o"
 	@echo "... src/PCres.i"
 	@echo "... src/PCres.s"
+	@echo "... src/ReadWriteBinaryf.o"
+	@echo "... src/ReadWriteBinaryf.i"
+	@echo "... src/ReadWriteBinaryf.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -6,23 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../include/PCres.h
+../include/ReadWriteBinaryf.h
 iostream
 -
-string
--
-string.h
-../include/string.h
 fstream
 -
 
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.cpp
-PCres.h
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.cpp
+ReadWriteBinaryf.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.h
 
 /home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc
-<<_
--
-PCres.h
-/home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.h
+ReadWriteBinaryf.h
+/home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.h
 
