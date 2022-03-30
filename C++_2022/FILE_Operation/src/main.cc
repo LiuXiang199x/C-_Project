@@ -1,10 +1,10 @@
-#include "GetPut.h"
+#include "pointerRW.h"
 
 using namespace std;
 
 
 int main() {
-    test_put();
+    test_pointer();
 
     return 0;
 }

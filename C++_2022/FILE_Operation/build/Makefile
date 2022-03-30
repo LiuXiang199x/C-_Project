@@ -150,6 +150,33 @@ src/<<_>>write2file.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make "CMakeFiles/test.dir/src/<<_>>write2file.cpp.s"
 .PHONY : src/<<_>>write2file.cpp.s
 
+src/GetLine.o: src/GetLine.cpp.o
+
+.PHONY : src/GetLine.o
+
+# target to build an object file
+src/GetLine.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GetLine.cpp.o
+.PHONY : src/GetLine.cpp.o
+
+src/GetLine.i: src/GetLine.cpp.i
+
+.PHONY : src/GetLine.i
+
+# target to preprocess a source file
+src/GetLine.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GetLine.cpp.i
+.PHONY : src/GetLine.cpp.i
+
+src/GetLine.s: src/GetLine.cpp.s
+
+.PHONY : src/GetLine.s
+
+# target to generate assembly for a file
+src/GetLine.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GetLine.cpp.s
+.PHONY : src/GetLine.cpp.s
+
 src/GetPut.o: src/GetPut.cpp.o
 
 .PHONY : src/GetPut.o
@@ -258,6 +285,33 @@ src/main.cc.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/pointerRW.o: src/pointerRW.cpp.o
+
+.PHONY : src/pointerRW.o
+
+# target to build an object file
+src/pointerRW.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointerRW.cpp.o
+.PHONY : src/pointerRW.cpp.o
+
+src/pointerRW.i: src/pointerRW.cpp.i
+
+.PHONY : src/pointerRW.i
+
+# target to preprocess a source file
+src/pointerRW.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointerRW.cpp.i
+.PHONY : src/pointerRW.cpp.i
+
+src/pointerRW.s: src/pointerRW.cpp.s
+
+.PHONY : src/pointerRW.s
+
+# target to generate assembly for a file
+src/pointerRW.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointerRW.cpp.s
+.PHONY : src/pointerRW.cpp.s
+
 src/write2file.o: src/write2file.cpp.o
 
 .PHONY : src/write2file.o
@@ -297,6 +351,9 @@ help:
 	@echo "... src/<<_>>write2file.o"
 	@echo "... src/<<_>>write2file.i"
 	@echo "... src/<<_>>write2file.s"
+	@echo "... src/GetLine.o"
+	@echo "... src/GetLine.i"
+	@echo "... src/GetLine.s"
 	@echo "... src/GetPut.o"
 	@echo "... src/GetPut.i"
 	@echo "... src/GetPut.s"
@@ -309,6 +366,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/pointerRW.o"
+	@echo "... src/pointerRW.i"
+	@echo "... src/pointerRW.s"
 	@echo "... src/write2file.o"
 	@echo "... src/write2file.i"
 	@echo "... src/write2file.s"

@@ -39,8 +39,17 @@ http://c.biancheng.net/view/7596.html
 6. "get()" 和 "put()" 读写文件:
     打开文件: ofstream outFile(xx, ios::out|ios::binary);
     输入字符到文件put(): char c, while(cin >> c){ outFile.put(c) };
-    从文件读取字符get():
+    从文件读取字符get(): char c, c=inFile.get()&&c!=EOF, EOF是末尾返回值。这样只会读取一行。
 
+7. "getline()"从文件中读取一行字符串:
+    ifstream inFile, char c[N],这里要指定大小。 inFile.getline(c, N).超过N就会读取失败
+    getline只能读取一行！！！
+    istream & getline(char* buf, int bufSize);
+    istream & getline(char* buf, int bufSize, char delim)//delim为终止字符
+
+    多行读取：while(inFile.getline(c, 40)){...}
+
+8. "指针"移动读写文件:
 
 注意事项：
 由于文件存放在硬盘中，硬盘的访问速度远远低于内存。如果每次写一个字节都要访问硬盘，那么文件的读写速度就会慢得不可忍受。

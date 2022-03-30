@@ -20,8 +20,11 @@ int test_put(){
     // }
 
     for(int i=0; i<4; i++){
-        char x = "0" + a[i];
-        outFile.put(x);
+        const char *x = "0" + a[i];
+        // int cc = "0";
+        // cout << cc << endl;
+        cout << a[i] << " " << *x << " " << x << endl;
+        outFile.put(*x);
     }
     outFile.close();
 
@@ -29,6 +32,19 @@ int test_put(){
 }
 
 int test_get(){
+
+    char c;
+    ifstream inFile("../files/GetPut.txt", ios::in);
+
+    if(!inFile){
+        cout << "error opening" << endl;
+        return 0;
+    }
+
+    while((c=inFile.get())&&c!=EOF){
+        cout << c;
+    }
+    inFile.close();
 
     return 0;
 }

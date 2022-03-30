@@ -70,9 +70,22 @@ CMakeFiles/test.dir/src/<<_>>write2file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/<<_>>write2file.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/agent/C-_Project/C++_2022/FILE_Operation/src/<<_>>write2file.cpp" -o "CMakeFiles/test.dir/src/<<_>>write2file.cpp.s"
 
+CMakeFiles/test.dir/src/GetLine.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/GetLine.cpp.o: ../src/GetLine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/GetLine.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/GetLine.cpp.o -c /home/agent/C-_Project/C++_2022/FILE_Operation/src/GetLine.cpp
+
+CMakeFiles/test.dir/src/GetLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/GetLine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/C++_2022/FILE_Operation/src/GetLine.cpp > CMakeFiles/test.dir/src/GetLine.cpp.i
+
+CMakeFiles/test.dir/src/GetLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/GetLine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/FILE_Operation/src/GetLine.cpp -o CMakeFiles/test.dir/src/GetLine.cpp.s
+
 CMakeFiles/test.dir/src/GetPut.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/GetPut.cpp.o: ../src/GetPut.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/GetPut.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/GetPut.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/GetPut.cpp.o -c /home/agent/C-_Project/C++_2022/FILE_Operation/src/GetPut.cpp
 
 CMakeFiles/test.dir/src/GetPut.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/test.dir/src/GetPut.cpp.s: cmake_force
 
 CMakeFiles/test.dir/src/PCres.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/PCres.cpp.o: ../src/PCres.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/PCres.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/PCres.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/PCres.cpp.o -c /home/agent/C-_Project/C++_2022/FILE_Operation/src/PCres.cpp
 
 CMakeFiles/test.dir/src/PCres.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/test.dir/src/PCres.cpp.s: cmake_force
 
 CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o: ../src/ReadWriteBinaryf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o -c /home/agent/C-_Project/C++_2022/FILE_Operation/src/ReadWriteBinaryf.cpp
 
 CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.s: cmake_force
 
 CMakeFiles/test.dir/src/main.cc.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/main.cc.o: ../src/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/main.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/main.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/main.cc.o -c /home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc
 
 CMakeFiles/test.dir/src/main.cc.i: cmake_force
@@ -122,9 +135,22 @@ CMakeFiles/test.dir/src/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/main.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/FILE_Operation/src/main.cc -o CMakeFiles/test.dir/src/main.cc.s
 
+CMakeFiles/test.dir/src/pointerRW.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/pointerRW.cpp.o: ../src/pointerRW.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/pointerRW.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/pointerRW.cpp.o -c /home/agent/C-_Project/C++_2022/FILE_Operation/src/pointerRW.cpp
+
+CMakeFiles/test.dir/src/pointerRW.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/pointerRW.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/C++_2022/FILE_Operation/src/pointerRW.cpp > CMakeFiles/test.dir/src/pointerRW.cpp.i
+
+CMakeFiles/test.dir/src/pointerRW.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/pointerRW.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/FILE_Operation/src/pointerRW.cpp -o CMakeFiles/test.dir/src/pointerRW.cpp.s
+
 CMakeFiles/test.dir/src/write2file.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/write2file.cpp.o: ../src/write2file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/write2file.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/src/write2file.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/write2file.cpp.o -c /home/agent/C-_Project/C++_2022/FILE_Operation/src/write2file.cpp
 
 CMakeFiles/test.dir/src/write2file.cpp.i: cmake_force
@@ -138,24 +164,28 @@ CMakeFiles/test.dir/src/write2file.cpp.s: cmake_force
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/src/<<_>>write2file.cpp.o" \
+"CMakeFiles/test.dir/src/GetLine.cpp.o" \
 "CMakeFiles/test.dir/src/GetPut.cpp.o" \
 "CMakeFiles/test.dir/src/PCres.cpp.o" \
 "CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o" \
 "CMakeFiles/test.dir/src/main.cc.o" \
+"CMakeFiles/test.dir/src/pointerRW.cpp.o" \
 "CMakeFiles/test.dir/src/write2file.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
 ../bin/test: CMakeFiles/test.dir/src/<<_>>write2file.cpp.o
+../bin/test: CMakeFiles/test.dir/src/GetLine.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/GetPut.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/PCres.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/ReadWriteBinaryf.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/main.cc.o
+../bin/test: CMakeFiles/test.dir/src/pointerRW.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/write2file.cpp.o
 ../bin/test: CMakeFiles/test.dir/build.make
 ../bin/test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../bin/test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agent/C-_Project/C++_2022/FILE_Operation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
