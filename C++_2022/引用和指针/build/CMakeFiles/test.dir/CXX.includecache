@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/allLibs.h
+iostream
+-
+string
+-
+cstring
+-
+fstream
+-
+
+../include/reference.h
+allLibs.h
+-
+
+/home/agent/C-_Project/C++_2022/引用和指针/src/main.cc
+reference.h
+/home/agent/C-_Project/C++_2022/引用和指针/src/reference.h
+
+/home/agent/C-_Project/C++_2022/引用和指针/src/reference.cpp
+reference.h
+/home/agent/C-_Project/C++_2022/引用和指针/src/reference.h
+
