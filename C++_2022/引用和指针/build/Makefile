@@ -150,32 +150,59 @@ src/main.cc.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
-src/pointer.o: src/pointer.cpp.o
+src/pointer_arr_string_calc.o: src/pointer_arr_string_calc.cpp.o
 
-.PHONY : src/pointer.o
+.PHONY : src/pointer_arr_string_calc.o
 
 # target to build an object file
-src/pointer.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer.cpp.o
-.PHONY : src/pointer.cpp.o
+src/pointer_arr_string_calc.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o
+.PHONY : src/pointer_arr_string_calc.cpp.o
 
-src/pointer.i: src/pointer.cpp.i
+src/pointer_arr_string_calc.i: src/pointer_arr_string_calc.cpp.i
 
-.PHONY : src/pointer.i
+.PHONY : src/pointer_arr_string_calc.i
 
 # target to preprocess a source file
-src/pointer.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer.cpp.i
-.PHONY : src/pointer.cpp.i
+src/pointer_arr_string_calc.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.i
+.PHONY : src/pointer_arr_string_calc.cpp.i
 
-src/pointer.s: src/pointer.cpp.s
+src/pointer_arr_string_calc.s: src/pointer_arr_string_calc.cpp.s
 
-.PHONY : src/pointer.s
+.PHONY : src/pointer_arr_string_calc.s
 
 # target to generate assembly for a file
-src/pointer.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer.cpp.s
-.PHONY : src/pointer.cpp.s
+src/pointer_arr_string_calc.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.s
+.PHONY : src/pointer_arr_string_calc.cpp.s
+
+src/pointer_func.o: src/pointer_func.cpp.o
+
+.PHONY : src/pointer_func.o
+
+# target to build an object file
+src/pointer_func.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_func.cpp.o
+.PHONY : src/pointer_func.cpp.o
+
+src/pointer_func.i: src/pointer_func.cpp.i
+
+.PHONY : src/pointer_func.i
+
+# target to preprocess a source file
+src/pointer_func.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_func.cpp.i
+.PHONY : src/pointer_func.cpp.i
+
+src/pointer_func.s: src/pointer_func.cpp.s
+
+.PHONY : src/pointer_func.s
+
+# target to generate assembly for a file
+src/pointer_func.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_func.cpp.s
+.PHONY : src/pointer_func.cpp.s
 
 src/reference.o: src/reference.cpp.o
 
@@ -216,9 +243,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/pointer.o"
-	@echo "... src/pointer.i"
-	@echo "... src/pointer.s"
+	@echo "... src/pointer_arr_string_calc.o"
+	@echo "... src/pointer_arr_string_calc.i"
+	@echo "... src/pointer_arr_string_calc.s"
+	@echo "... src/pointer_func.o"
+	@echo "... src/pointer_func.i"
+	@echo "... src/pointer_func.s"
 	@echo "... src/reference.o"
 	@echo "... src/reference.i"
 	@echo "... src/reference.s"

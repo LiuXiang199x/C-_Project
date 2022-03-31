@@ -3,12 +3,16 @@
 
 CMakeFiles/test.dir/src/main.cc.o
  ../include/allLibs.h
- ../include/pointer.h
+ ../include/pointer_func.h
  /home/agent/C-_Project/C++_2022/引用和指针/src/main.cc
-CMakeFiles/test.dir/src/pointer.cpp.o
+CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o
  ../include/allLibs.h
- ../include/pointer.h
- /home/agent/C-_Project/C++_2022/引用和指针/src/pointer.cpp
+ ../include/pointer_arr_string_calc.h
+ /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_arr_string_calc.cpp
+CMakeFiles/test.dir/src/pointer_func.cpp.o
+ ../include/allLibs.h
+ ../include/pointer_func.h
+ /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_func.cpp
 CMakeFiles/test.dir/src/reference.cpp.o
  ../include/allLibs.h
  ../include/reference.h

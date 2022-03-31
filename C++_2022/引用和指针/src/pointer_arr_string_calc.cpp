@@ -1,4 +1,4 @@
-#include "pointer.h"
+#include "pointer_arr_string_calc.h"
 
 using namespace std;
 
@@ -70,11 +70,31 @@ int Pointer::array_pointer(){
 }
 
 int Pointer::string_pointer(){
+
+    cout << "==========> C中有两种字符串表达方式：字符数组 和 指针直接指向字符串" << endl;
+    cout << "==========> 字符数组（数据储存在全局静态区或栈区，能读能写）：" << endl;
+
     char str[] = "wo shi liu xiang";
-    
     int len = strlen(str);
 
     cout << str << " " << len << endl;
+
+    char *pstr = str;
+    for(int i=0; i<len; i++){
+        printf("%c", *(pstr+i));
+    }
+    printf("\n");
+
+    cout << "==========> 指针直接指向字符串（字符串储存在常量区, 能读不能写）：" << endl;
+
+    char *pstrr = "me llamo marco....";
+    // char *pstrr; pstrr = ".....";
+    cout << pstrr << endl;
+    int len_s = strlen(pstrr);
+    for(int j=0; j<len_s; j++){
+        printf("%c", *(pstrr+j));
+    }
+    printf("\n");
 
     return 0;
 }

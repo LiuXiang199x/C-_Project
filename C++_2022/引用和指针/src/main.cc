@@ -1,7 +1,7 @@
-#include "pointer.h"
+#include "pointer_func.h"
 
 int main(){
 
-    Pointer::string_pointer();
+    pointer_func();
     return 0;
 }
