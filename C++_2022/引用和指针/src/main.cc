@@ -1,7 +1,7 @@
-#include "pointer_func.h"
+#include "func_pointer.h"
 
 int main(){
 
-    pointer_func();
+    func_pointer();
     return 0;
 }

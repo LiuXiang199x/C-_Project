@@ -57,9 +57,48 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
+CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.o: ../src/arr_string_calc_pointer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/arr_string_calc_pointer.cpp
+
+CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/C++_2022/引用和指针/src/arr_string_calc_pointer.cpp > CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.i
+
+CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/引用和指针/src/arr_string_calc_pointer.cpp -o CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.s
+
+CMakeFiles/test.dir/src/doublepointer.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/doublepointer.cpp.o: ../src/doublepointer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/doublepointer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/doublepointer.cpp.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/doublepointer.cpp
+
+CMakeFiles/test.dir/src/doublepointer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/doublepointer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/C++_2022/引用和指针/src/doublepointer.cpp > CMakeFiles/test.dir/src/doublepointer.cpp.i
+
+CMakeFiles/test.dir/src/doublepointer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/doublepointer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/引用和指针/src/doublepointer.cpp -o CMakeFiles/test.dir/src/doublepointer.cpp.s
+
+CMakeFiles/test.dir/src/func_pointer.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/func_pointer.cpp.o: ../src/func_pointer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/func_pointer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/func_pointer.cpp.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/func_pointer.cpp
+
+CMakeFiles/test.dir/src/func_pointer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/func_pointer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/C++_2022/引用和指针/src/func_pointer.cpp > CMakeFiles/test.dir/src/func_pointer.cpp.i
+
+CMakeFiles/test.dir/src/func_pointer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/func_pointer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/引用和指针/src/func_pointer.cpp -o CMakeFiles/test.dir/src/func_pointer.cpp.s
+
 CMakeFiles/test.dir/src/main.cc.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/main.cc.o: ../src/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/main.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/main.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/main.cc.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/main.cc
 
 CMakeFiles/test.dir/src/main.cc.i: cmake_force
@@ -70,22 +109,22 @@ CMakeFiles/test.dir/src/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/main.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/引用和指针/src/main.cc -o CMakeFiles/test.dir/src/main.cc.s
 
-CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o: ../src/pointer_arr_string_calc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_arr_string_calc.cpp
+CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.o: ../src/pointer_arr_doublearr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_arr_doublearr.cpp
 
-CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_arr_string_calc.cpp > CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.i
+CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_arr_doublearr.cpp > CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.i
 
-CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_arr_string_calc.cpp -o CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.s
+CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_arr_doublearr.cpp -o CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.s
 
 CMakeFiles/test.dir/src/pointer_func.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/pointer_func.cpp.o: ../src/pointer_func.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/pointer_func.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/pointer_func.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/pointer_func.cpp.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/pointer_func.cpp
 
 CMakeFiles/test.dir/src/pointer_func.cpp.i: cmake_force
@@ -98,7 +137,7 @@ CMakeFiles/test.dir/src/pointer_func.cpp.s: cmake_force
 
 CMakeFiles/test.dir/src/reference.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/reference.cpp.o: ../src/reference.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/reference.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/reference.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/reference.cpp.o -c /home/agent/C-_Project/C++_2022/引用和指针/src/reference.cpp
 
 CMakeFiles/test.dir/src/reference.cpp.i: cmake_force
@@ -111,21 +150,27 @@ CMakeFiles/test.dir/src/reference.cpp.s: cmake_force
 
 # Object files for target test
 test_OBJECTS = \
+"CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.o" \
+"CMakeFiles/test.dir/src/doublepointer.cpp.o" \
+"CMakeFiles/test.dir/src/func_pointer.cpp.o" \
 "CMakeFiles/test.dir/src/main.cc.o" \
-"CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o" \
+"CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.o" \
 "CMakeFiles/test.dir/src/pointer_func.cpp.o" \
 "CMakeFiles/test.dir/src/reference.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
+../bin/test: CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.o
+../bin/test: CMakeFiles/test.dir/src/doublepointer.cpp.o
+../bin/test: CMakeFiles/test.dir/src/func_pointer.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/main.cc.o
-../bin/test: CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o
+../bin/test: CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/pointer_func.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/reference.cpp.o
 ../bin/test: CMakeFiles/test.dir/build.make
 ../bin/test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../bin/test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

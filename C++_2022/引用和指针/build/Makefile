@@ -123,6 +123,87 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+src/arr_string_calc_pointer.o: src/arr_string_calc_pointer.cpp.o
+
+.PHONY : src/arr_string_calc_pointer.o
+
+# target to build an object file
+src/arr_string_calc_pointer.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.o
+.PHONY : src/arr_string_calc_pointer.cpp.o
+
+src/arr_string_calc_pointer.i: src/arr_string_calc_pointer.cpp.i
+
+.PHONY : src/arr_string_calc_pointer.i
+
+# target to preprocess a source file
+src/arr_string_calc_pointer.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.i
+.PHONY : src/arr_string_calc_pointer.cpp.i
+
+src/arr_string_calc_pointer.s: src/arr_string_calc_pointer.cpp.s
+
+.PHONY : src/arr_string_calc_pointer.s
+
+# target to generate assembly for a file
+src/arr_string_calc_pointer.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/arr_string_calc_pointer.cpp.s
+.PHONY : src/arr_string_calc_pointer.cpp.s
+
+src/doublepointer.o: src/doublepointer.cpp.o
+
+.PHONY : src/doublepointer.o
+
+# target to build an object file
+src/doublepointer.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/doublepointer.cpp.o
+.PHONY : src/doublepointer.cpp.o
+
+src/doublepointer.i: src/doublepointer.cpp.i
+
+.PHONY : src/doublepointer.i
+
+# target to preprocess a source file
+src/doublepointer.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/doublepointer.cpp.i
+.PHONY : src/doublepointer.cpp.i
+
+src/doublepointer.s: src/doublepointer.cpp.s
+
+.PHONY : src/doublepointer.s
+
+# target to generate assembly for a file
+src/doublepointer.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/doublepointer.cpp.s
+.PHONY : src/doublepointer.cpp.s
+
+src/func_pointer.o: src/func_pointer.cpp.o
+
+.PHONY : src/func_pointer.o
+
+# target to build an object file
+src/func_pointer.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/func_pointer.cpp.o
+.PHONY : src/func_pointer.cpp.o
+
+src/func_pointer.i: src/func_pointer.cpp.i
+
+.PHONY : src/func_pointer.i
+
+# target to preprocess a source file
+src/func_pointer.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/func_pointer.cpp.i
+.PHONY : src/func_pointer.cpp.i
+
+src/func_pointer.s: src/func_pointer.cpp.s
+
+.PHONY : src/func_pointer.s
+
+# target to generate assembly for a file
+src/func_pointer.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/func_pointer.cpp.s
+.PHONY : src/func_pointer.cpp.s
+
 src/main.o: src/main.cc.o
 
 .PHONY : src/main.o
@@ -150,32 +231,32 @@ src/main.cc.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
-src/pointer_arr_string_calc.o: src/pointer_arr_string_calc.cpp.o
+src/pointer_arr_doublearr.o: src/pointer_arr_doublearr.cpp.o
 
-.PHONY : src/pointer_arr_string_calc.o
+.PHONY : src/pointer_arr_doublearr.o
 
 # target to build an object file
-src/pointer_arr_string_calc.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.o
-.PHONY : src/pointer_arr_string_calc.cpp.o
+src/pointer_arr_doublearr.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.o
+.PHONY : src/pointer_arr_doublearr.cpp.o
 
-src/pointer_arr_string_calc.i: src/pointer_arr_string_calc.cpp.i
+src/pointer_arr_doublearr.i: src/pointer_arr_doublearr.cpp.i
 
-.PHONY : src/pointer_arr_string_calc.i
+.PHONY : src/pointer_arr_doublearr.i
 
 # target to preprocess a source file
-src/pointer_arr_string_calc.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.i
-.PHONY : src/pointer_arr_string_calc.cpp.i
+src/pointer_arr_doublearr.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.i
+.PHONY : src/pointer_arr_doublearr.cpp.i
 
-src/pointer_arr_string_calc.s: src/pointer_arr_string_calc.cpp.s
+src/pointer_arr_doublearr.s: src/pointer_arr_doublearr.cpp.s
 
-.PHONY : src/pointer_arr_string_calc.s
+.PHONY : src/pointer_arr_doublearr.s
 
 # target to generate assembly for a file
-src/pointer_arr_string_calc.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_string_calc.cpp.s
-.PHONY : src/pointer_arr_string_calc.cpp.s
+src/pointer_arr_doublearr.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pointer_arr_doublearr.cpp.s
+.PHONY : src/pointer_arr_doublearr.cpp.s
 
 src/pointer_func.o: src/pointer_func.cpp.o
 
@@ -240,12 +321,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... src/arr_string_calc_pointer.o"
+	@echo "... src/arr_string_calc_pointer.i"
+	@echo "... src/arr_string_calc_pointer.s"
+	@echo "... src/doublepointer.o"
+	@echo "... src/doublepointer.i"
+	@echo "... src/doublepointer.s"
+	@echo "... src/func_pointer.o"
+	@echo "... src/func_pointer.i"
+	@echo "... src/func_pointer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/pointer_arr_string_calc.o"
-	@echo "... src/pointer_arr_string_calc.i"
-	@echo "... src/pointer_arr_string_calc.s"
+	@echo "... src/pointer_arr_doublearr.o"
+	@echo "... src/pointer_arr_doublearr.i"
+	@echo "... src/pointer_arr_doublearr.s"
 	@echo "... src/pointer_func.o"
 	@echo "... src/pointer_func.i"
 	@echo "... src/pointer_func.s"
