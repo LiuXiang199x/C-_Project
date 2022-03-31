@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/test.dir/src/main.cc.o CMakeFiles/test.dir/src/reference.cpp.o  -o ../bin/test 
+/usr/bin/c++     CMakeFiles/test.dir/src/main.cc.o CMakeFiles/test.dir/src/pointer.cpp.o CMakeFiles/test.dir/src/reference.cpp.o  -o ../bin/test 

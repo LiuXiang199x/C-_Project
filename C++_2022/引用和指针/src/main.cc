@@ -1,7 +1,7 @@
-#include "reference.h"
+#include "pointer.h"
 
 int main(){
 
-    Reference::simple_test();
+    Pointer::();
     return 0;
 }

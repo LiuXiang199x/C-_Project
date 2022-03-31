@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/agent/C-_Project/C++_2022/引用和指针/src/main.cc" "/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles/test.dir/src/main.cc.o"
+  "/home/agent/C-_Project/C++_2022/引用和指针/src/pointer.cpp" "/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles/test.dir/src/pointer.cpp.o"
   "/home/agent/C-_Project/C++_2022/引用和指针/src/reference.cpp" "/home/agent/C-_Project/C++_2022/引用和指针/build/CMakeFiles/test.dir/src/reference.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

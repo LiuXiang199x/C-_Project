@@ -16,15 +16,11 @@ cstring
 fstream
 -
 
-../include/reference.h
+../include/pointer.h
 allLibs.h
--
+../include/allLibs.h
 
-/home/agent/C-_Project/C++_2022/引用和指针/src/main.cc
-reference.h
-/home/agent/C-_Project/C++_2022/引用和指针/src/reference.h
-
-/home/agent/C-_Project/C++_2022/引用和指针/src/reference.cpp
-reference.h
-/home/agent/C-_Project/C++_2022/引用和指针/src/reference.h
+/home/agent/C-_Project/C++_2022/引用和指针/src/pointer.cpp
+pointer.h
+/home/agent/C-_Project/C++_2022/引用和指针/src/pointer.h
 

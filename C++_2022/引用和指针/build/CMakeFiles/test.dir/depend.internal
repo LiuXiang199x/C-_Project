@@ -3,8 +3,12 @@
 
 CMakeFiles/test.dir/src/main.cc.o
  ../include/allLibs.h
- ../include/reference.h
+ ../include/pointer.h
  /home/agent/C-_Project/C++_2022/引用和指针/src/main.cc
+CMakeFiles/test.dir/src/pointer.cpp.o
+ ../include/allLibs.h
+ ../include/pointer.h
+ /home/agent/C-_Project/C++_2022/引用和指针/src/pointer.cpp
 CMakeFiles/test.dir/src/reference.cpp.o
  ../include/allLibs.h
  ../include/reference.h
