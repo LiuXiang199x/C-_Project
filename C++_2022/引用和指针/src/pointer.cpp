@@ -16,10 +16,10 @@ int Pointer::simple_max_menos(){
     // int dd = ++*p1; // 11
     // cout << dd << endl;
 
-    // *p++: 后赋值（内容上操作）；
-    // ++*p: 先赋值（内容上操作）;
-    // *++p/*(++p): 先加地址（地址上操作）;
-    // *(p++): 先*p操作然后再地址++(先值不变*p取出来后再p存放的地址++)；
+    // (*p)++: 后赋值自加，传给别人的还是*p（内容上操作）；
+    // ++*p = ++*(p): 先赋值/自加，传给别人的是自加完了的（内容上操作）;
+    // *++p = *(++p): 先加地址（地址上操作）;
+    // *p++ = *(p++): 先*p操作然后再地址++(先值不变*p取出来后再p存放的地址++)；
     // 32位机器，每一位寻址就是一个字节，int占四个字节，所以地址+1就是8c-90. +1 或自增都是移动4位（int类型）
 
     cout << " *p1++=" << *p1++ << "先赋值*p1再++， *++p1=" << *++p1 << "地址加了一位再取值， ++*p1=" << ++*p1 << \
@@ -40,13 +40,41 @@ int Pointer::simple_max_menos(){
     // 0x7ffeb445be8c 0x7ffeb445be90 0x7ffeb445be8c 0x7ffeb445be90
     // 32位机器，每一位寻址就是一个字节，int占四个字节，所以地址+1就是8c-90.
     // ppp+1 并不是自增，所以看后面可以知道ppp++打印还是原来ppp地址; 若改为++ppp就是打印的自增后的地址
-    cout << ppp << " " << ppp+1 << " " << ++ppp << " " << ppp << endl;
+    // cout << ppp << " " << ppp+1 << " " << ++ppp << " " << ppp << endl;
+
+    // 2 0x7ffc19c7bbcc 2 0x7ffc19c7bbd0 432520148
+    cout << *ppp << " " << ppp << " " << ++*ppp << " " << ppp << " " << *ppp << endl;
+    return 0;
+}
+
+int Pointer::array_pointer(){
+
+    int *p, *pp;
+    int arr[4] = {1,3,5,7};
+
+    p = arr;
+    pp=arr;
+    cout << *(arr+1) << endl;
+    cout << *p << " " << *(p+2) << endl;
+    cout << arr << endl; // 0x7fff60688cd0
+    
+    // 1, 3, 4, 4: *pp取完1后地址++，
+    // 1 - 0x7fff60688cd4, 3 - 0x7fff60688cd4, 
+    // 4 - 0x7fff60688cd4(这里说明存的是3的地址，值上面+1)
+    // 重点！：：！ 4 - 0x7fff60688cd4，这里存4 的原因！！前面本来这个地址是放的3，自加后这个地址的值被覆盖了！！
+    cout << *pp++ << " " << pp << \
+    " " << *pp << " " << pp << " "<< ++*pp << " "<<pp<<" " << *pp << " " << pp << endl;
+
 
     return 0;
 }
 
-int array_pointer(){
+int Pointer::string_pointer(){
+    char str[] = "wo shi liu xiang";
+    
+    int len = strlen(str);
 
+    cout << str << " " << len << endl;
 
     return 0;
 }

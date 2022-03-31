@@ -2,6 +2,6 @@
 
 int main(){
 
-    Pointer::();
+    Pointer::string_pointer();
     return 0;
 }
