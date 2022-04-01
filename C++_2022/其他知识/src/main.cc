@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    test_const();
+    const_funcParams();
 
     return 0;
 }
