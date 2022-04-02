@@ -1,10 +1,12 @@
-#include "const.h"
+#include "static_data_func.h"
 
 using namespace std;
 
 int main(){
 
-    const_funcParams();
+    test_static();
+    AA::b++;
+    AA::print2();
 
     return 0;
 }
