@@ -32,6 +32,9 @@ int Triangle::area(){
 
 
 int test_polymorphism(){
+
+    // 这三个都能访问到各自的函数，因为是三个不同的指针
+    // 如果只用一个指针的话就不行了，Shape *a， a再去指向派生类就是不行的，访问不到派生类的函数
     Shape a(2,2);
     Rectangle b;
     Triangle c;

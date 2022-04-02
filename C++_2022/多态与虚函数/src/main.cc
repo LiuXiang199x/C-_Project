@@ -1,4 +1,4 @@
-#include "polymorphism.h"
+#include "polymor_real.h"
 
 using namespace std;
 
@@ -19,6 +19,6 @@ int main( )
 //    // 调用三角形的求面积函数 area
 //    shape->area();
    
-   test_polymorphism();
+   test_polyreal();
    return 0;
 }
