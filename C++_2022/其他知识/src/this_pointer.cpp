@@ -3,15 +3,30 @@
 using namespace std;
 
 
-void A::hello(){
-    cout << "hello world!!!!" << endl;
+Point::Point(int xx, int yy){
+    x = xx;
+    y = yy;
 }
 
+void Point::MovePoint(int qq, int pp){
+    x += qq;
+    y += pp;
+}
 
-int test_run(){
+void Point::print(){
+    cout << "x = " << x << \
+    "; y = " << y << endl;
+    cout << this->x << " " << this->y << endl;
+}
 
-    A* pstr = new A;
-    pstr->hello();
+int test_this(){
+    Point point1(10, 10);
+    cout << sizeof(Point) << " " << sizeof(point1) << endl;
+    point1.MovePoint(2,2);
 
-    return 0;
+    Point* pstp = new Point(0, 0);
+    pstp->MovePoint(33, 55);
+    pstp->print();
+    
+    point1.print();
 }

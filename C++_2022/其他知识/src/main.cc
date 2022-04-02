@@ -1,12 +1,10 @@
-#include "static_data_func.h"
+#include "this_pointer.h"
 
 using namespace std;
 
 int main(){
 
-    test_static();
-    AA::b++;
-    AA::print2();
+    test_this();
 
     return 0;
 }
