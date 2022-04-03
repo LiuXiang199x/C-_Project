@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/agent/C-_Project/C++_2022/其他知识/include 
+CXX_INCLUDES = -I/home/marco/C-_Project/C++_2022/其他知识/include 
 
